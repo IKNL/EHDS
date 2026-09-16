@@ -1,0 +1,365 @@
+waardelijst,variabele,waardecode,waardeomschrijving
+Geslacht,gesl,1,Man
+Geslacht,gesl,2,Vrouw
+Geslacht,gesl,3,Intersekse (hermafrodiet)
+Indeling naar ja en nee,iacr,0,Nee
+Indeling naar ja en nee,iacr,1,Ja
+SES score (3 cat) obv mediaan inkomen in postcode van CBS,ink_ses,1,Laag inkomen (< 24.300 EUR)
+SES score (3 cat) obv mediaan inkomen in postcode van CBS,ink_ses,2,Midden inkomen (24.300 – 31.000 EUR)
+SES score (3 cat) obv mediaan inkomen in postcode van CBS,ink_ses,3,Hoog inkomen (> 31.000 EUR)
+Indeling naar ja en nee,mal,0,Nee
+Indeling naar ja en nee,mal,1,Ja
+Vitale status,vit_stat,0,In leven
+Vitale status,vit_stat,1,Overleden
+Topografie,topo,C34,Bronchus en long
+TopografieSublokalisatie,topo_sublok,C340,Hoofdbronchus
+TopografieSublokalisatie,topo_sublok,C341,Long bovenkwab
+TopografieSublokalisatie,topo_sublok,C342,Long middenkwab
+TopografieSublokalisatie,topo_sublok,C343,Long onderkwab
+TopografieSublokalisatie,topo_sublok,C348,Long overlappend
+TopografieSublokalisatie,topo_sublok,C349,Long NNO
+Lateralisatie,later,1,Links
+Lateralisatie,later,2,Rechts
+Lateralisatie,later,3,Mediaal/centraal
+Lateralisatie,later,4,Dubbelzijdig
+Lateralisatie,later,5,Proximaal
+Lateralisatie,later,6,Distaal
+Lateralisatie,later,7,Geopereerd orgaan
+Lateralisatie,later,9,NVT
+Lateralisatie,later,X,Onbekend
+Morfologie,morf,8000,"Neoplasma, NNO"
+Morfologie,morf,8010,"Carcinoom, NNO"
+Morfologie,morf,8012,"Grootcellig carcinoom, NNO"
+Morfologie,morf,8013,Grootcellig neuro-endocrien carcinoom
+Morfologie,morf,8020,"Ongedifferentieerd carcinoom, NNO"
+Morfologie,morf,8041,"Kleincellig carcinoom, NNO"
+Morfologie,morf,8045,Gemengd kleincellig carcinoom
+Morfologie,morf,8046,Niet-kleincellig carcinoom
+Morfologie,morf,8070,"Plaveiselcelcarcinoom, NNO"
+Morfologie,morf,8071,Verhoornend plaveiselcelcarcinoom
+Morfologie,morf,8072,Niet-verhoornend (grootcellig) plaveiselcelcarcinoom
+Morfologie,morf,8140,"Adenocarcinoom, NNO"
+Morfologie (categorieën) long,morf_cat,0,Anders/Overig
+Morfologie (categorieën) long,morf_cat,1,SCLC
+Morfologie (categorieën) long,morf_cat,10,NoPath
+Morfologie (categorieën) long,morf_cat,2,Squamous
+Morfologie (categorieën) long,morf_cat,3,Adenocarcinoma (incl lepidisch)
+Morfologie (categorieën) long,morf_cat,4,Adenosquamous
+Morfologie (categorieën) long,morf_cat,5,Sarcomatoid
+Morfologie (categorieën) long,morf_cat,6,Salivary
+Morfologie (categorieën) long,morf_cat,7,Carcinoid
+Morfologie (categorieën) long,morf_cat,8,LCNEC
+Morfologie (categorieën) long,morf_cat,9,Large nos
+Gedrag,gedrag,0,Benigne
+Gedrag,gedrag,1,Borderline
+Gedrag,gedrag,2,In situ
+Gedrag,gedrag,3,Maligne
+Gedrag,gedrag,6,Metastase
+Gedrag,gedrag,9,Invasief of metastase
+Differentiatiegraad,diffgrad,1,Graad 1 / goed gedifferentieerd
+Differentiatiegraad,diffgrad,2,Graad 2 / matig gedifferentieerd
+Differentiatiegraad,diffgrad,2A,Graad 2A
+Differentiatiegraad,diffgrad,2B,Graad 2B
+Differentiatiegraad,diffgrad,3,Graad 3 / slecht gedifferentieerd
+Differentiatiegraad,diffgrad,4,Graad 4 / ongedifferentieerd / anaplastisch / GGG4
+Differentiatiegraad,diffgrad,5,T-cel / GGG5
+Differentiatiegraad,diffgrad,6,B-cel
+Differentiatiegraad,diffgrad,7,Null-cel
+Differentiatiegraad,diffgrad,8,NK-cel
+Differentiatiegraad,diffgrad,9,Onbekend
+ct,ct,0,0
+ct,ct,1,1
+ct,ct,1A,1A
+ct,ct,1B,1B
+ct,ct,1C,1C
+ct,ct,1MI,1MI
+ct,ct,2,2
+ct,ct,2A,2A
+ct,ct,2B,2B
+ct,ct,3,3
+ct,ct,4,4
+cn,cn,0,0
+cn,cn,1,1
+cn,cn,2,2
+cn,cn,2A,2A
+cn,cn,2B,2B
+cn,cn,3,3
+cn,cn,4,4
+cn,cn,X,X
+cm,cm,0,0
+cm,cm,1,1
+cm,cm,1A,1A
+cm,cm,1B,1B
+cm,cm,1C,1C
+cm,cm,1C1,1C1
+cm,cm,1C2,1C2
+cm,cm,X,X
+pt,pt,0,0
+pt,pt,1,1
+pt,pt,1A,1A
+pt,pt,1B,1B
+pt,pt,1C,1C
+pt,pt,1MI,1MI
+pt,pt,2,2
+pt,pt,2A,2A
+pt,pt,2B,2B
+pt,pt,3,3
+pt,pt,3A,3A
+pn,pn,0,0
+pn,pn,1,1
+pn,pn,1A,1A
+pn,pn,1M,1M
+pn,pn,2,2
+pn,pn,2A,2A
+pn,pn,2B,2B
+pn,pn,3,3
+pn,pn,X,X
+pm,pm,-,-
+pm,pm,0,0
+pm,pm,1,1
+pm,pm,1A,1A
+pm,pm,1B,1B
+pm,pm,1C,1C
+pm,pm,1C1,1C1
+pm,pm,1C2,1C2
+pm,pm,X,X
+cstadium,cstadium,0,0
+cstadium,cstadium,1,1
+cstadium,cstadium,1A,1A
+cstadium,cstadium,1A1,1A1
+cstadium,cstadium,1A2,1A2
+cstadium,cstadium,1A3,1A3
+cstadium,cstadium,1B,1B
+cstadium,cstadium,2,2
+cstadium,cstadium,2A,2A
+cstadium,cstadium,2B,2B
+cstadium,cstadium,3A,3A
+cstadium,cstadium,3B,3B
+pstadium,pstadium,0,0
+pstadium,pstadium,1,1
+pstadium,pstadium,1A,1A
+pstadium,pstadium,1A1,1A1
+pstadium,pstadium,1A2,1A2
+pstadium,pstadium,1A3,1A3
+pstadium,pstadium,1B,1B
+pstadium,pstadium,2,2
+pstadium,pstadium,2A,2A
+pstadium,pstadium,2B,2B
+pstadium,pstadium,3A,3A
+pstadium,pstadium,3B,3B
+stadium,stadium,0,0
+stadium,stadium,1,1
+stadium,stadium,1A,1A
+stadium,stadium,1A1,1A1
+stadium,stadium,1A2,1A2
+stadium,stadium,1A3,1A3
+stadium,stadium,1B,1B
+stadium,stadium,2,2
+stadium,stadium,2A,2A
+stadium,stadium,2B,2B
+stadium,stadium,3A,3A
+stadium,stadium,3B,3B
+Eod,ceod,1,Niet invasief/in situ
+Eod,ceod,2,Beperkt tot het orgaan van oorsprong
+Eod,ceod,3,Uitbreiding in aangrenzende organen/weefsels
+Eod,ceod,4,Metastase in regionale lymfeklieren
+Eod,ceod,5,Combinatie 3 en 4
+Eod,ceod,6,Metastase op afstand
+Eod,ceod,9,NVT
+Eod,ceod,X,Onbekend/onvoldoende informatie
+Eod,peod,1,Niet invasief/in situ
+Eod,peod,2,Beperkt tot het orgaan van oorsprong
+Eod,peod,3,Uitbreiding in aangrenzende organen/weefsels
+Eod,peod,4,Metastase in regionale lymfeklieren
+Eod,peod,5,Combinatie 3 en 4
+Eod,peod,6,Metastase op afstand
+Eod,peod,9,NVT
+Eod,peod,X,Onbekend/onvoldoende informatie
+Basisdiagnose,diag_basis,0,Alleen overlijdensverklaring
+Basisdiagnose,diag_basis,1,Klinisch
+Basisdiagnose,diag_basis,2,Klinisch onderzoek
+Basisdiagnose,diag_basis,3,Exploratieve chirurgie of obductie
+Basisdiagnose,diag_basis,4,Specifieke tumormarkers
+Basisdiagnose,diag_basis,5,Cytologie
+Basisdiagnose,diag_basis,6,Histologische bevestiging metastasen
+Basisdiagnose,diag_basis,7,Histologie
+Basisdiagnose,diag_basis,8,Cytogenetica en/of moleculaire testen
+Basisdiagnose,diag_basis,9,Onbekend
+Indeling naar ja en nee,longtum_voor,0,Nee
+Indeling naar ja en nee,longtum_voor,1,Ja
+TopografieSublokalisatie,meta_topo_sublok,C220,Lever primair
+TopografieSublokalisatie,meta_topo_sublok,C341,Long bovenkwab
+TopografieSublokalisatie,meta_topo_sublok,C343,Long onderkwab
+TopografieSublokalisatie,meta_topo_sublok,C348,Long overlappend
+TopografieSublokalisatie,meta_topo_sublok,C349,Long NNO
+TopografieSublokalisatie,meta_topo_sublok,C384,Pleura NNO
+TopografieSublokalisatie,meta_topo_sublok,C412,Bot wervelkolom
+TopografieSublokalisatie,meta_topo_sublok,C413,Bot rib/sternum/clavicula
+TopografieSublokalisatie,meta_topo_sublok,C414,Bot bekkenbeenderen/sacrum/coccygis
+TopografieSublokalisatie,meta_topo_sublok,C418,Overlappende lokalisaties bot/gewrichten/kraakbeen
+TopografieSublokalisatie,meta_topo_sublok,C419,Bot NNO
+TopografieSublokalisatie,meta_topo_sublok,C711,Hersenen frontaal kwab
+Topografie,meta_topo,C17,Dunne darm
+Topografie,meta_topo,C22,Lever en intrahepatische galwegen
+Topografie,meta_topo,C25,Pancreas
+Topografie,meta_topo,C34,Bronchus en long
+Topografie,meta_topo,C38,"Hart, mediastinum en pleura"
+Topografie,meta_topo,C40,"Bot, gewrichten, kraakbeen van extremiteiten"
+Topografie,meta_topo,C41,"Bot, gewrichten, kraakbeen overige en NNO loc"
+Topografie,meta_topo,C42,Hematopoietisch en reticulo-endotheliaal stelsel
+Topografie,meta_topo,C44,Huid
+Topografie,meta_topo,C48,Retroperitoneum en peritoneum
+Topografie,meta_topo,C49,Weke delen
+Topografie,meta_topo,C50,Mamma
+"Indeling naar ja, nee en onbekend",multifoc,0,Nee
+"Indeling naar ja, nee en onbekend",multifoc,1,Ja
+"Indeling naar ja, nee en onbekend",multifoc,9,Onbekend
+PD-L1-receptorwaarde (%) in categorieën,pdl1_cat,0,Negatief of <1%
+PD-L1-receptorwaarde (%) in categorieën,pdl1_cat,1,1-49%
+PD-L1-receptorwaarde (%) in categorieën,pdl1_cat,2,50-89%
+PD-L1-receptorwaarde (%) in categorieën,pdl1_cat,3,90-100%
+PD-L1-receptorwaarde (%) in categorieën,pdl1_cat,9,Onbekend
+Indeling naar ja en nee,smplc,0,Nee
+Indeling naar ja en nee,smplc,1,Ja
+Sulcus superior,sulc_sup,0,nee
+Sulcus superior,sulc_sup,1,ja
+Instelling,contact_zkh1,100,*Medisch Centrum Alkmaar
+Instelling,contact_zkh1,243,Reinier de Graaf
+Instelling,contact_zkh1,246,Medisch Centrum Leeuwarden
+Instelling,contact_zkh1,248,Elkerliek ziekenhuis
+Instelling,contact_zkh1,265,Ziekenhuis Gelderse Vallei
+Instelling,contact_zkh1,268,*Ziekenhuis Rijnstate
+Instelling,contact_zkh1,269,Medisch Spectrum Twente
+Instelling,contact_zkh1,282,Martini Ziekenhuis
+Instelling,contact_zkh1,286,*Kennemer Gasthuis
+Instelling,contact_zkh1,297,Amphia
+Reden voor diagnostiek,diag_reden,1,klachten
+Reden voor diagnostiek,diag_reden,2,screening
+Reden voor diagnostiek,diag_reden,3,surveillance
+Reden voor diagnostiek,diag_reden,4,toeval
+Reden voor diagnostiek,diag_reden,5,screening hoog risico/erfelijke belasting
+Reden voor diagnostiek,diag_reden,7,overig
+Reden voor diagnostiek,diag_reden,9,onbekend
+Soort moleculaire diagnostiek,mol_diag_type,1,IHC
+Soort moleculaire diagnostiek,mol_diag_type,2,ctDNA
+Soort moleculaire diagnostiek,mol_diag_type,3,"single testing (FISH, PCR)"
+Soort moleculaire diagnostiek,mol_diag_type,4,NGS op weefsel
+Soort moleculaire diagnostiek,mol_diag_type,5,WGS op weefsel
+Uitslag navigatiebronchoscopie,navbroncho_uitslag,0,negatief
+Uitslag navigatiebronchoscopie,navbroncho_uitslag,1,positief
+Uitslag navigatiebronchoscopie,navbroncho_uitslag,9,onbekend/niet representatief
+Instelling,navbroncho_zkh,128,Ikazia Ziekenhuis
+Instelling,navbroncho_zkh,139,Maasziekenhuis Pantein
+Instelling,navbroncho_zkh,265,Ziekenhuis Gelderse Vallei
+Instelling,navbroncho_zkh,270,Rode Kruis Ziekenhuis
+Instelling,navbroncho_zkh,282,Martini Ziekenhuis
+Instelling,navbroncho_zkh,291,Albert Schweitzer Ziekenhuis
+Instelling,navbroncho_zkh,295,Maasstad Ziekenhuis
+Instelling,navbroncho_zkh,297,Amphia
+Instelling,navbroncho_zkh,301,Bravis ziekenhuis
+BvD voor start behandeling,ther_diag_basis,1,klinisch
+BvD voor start behandeling,ther_diag_basis,2,klinisch onderzoek
+BvD voor start behandeling,ther_diag_basis,4,specifieke tumormarkers
+BvD voor start behandeling,ther_diag_basis,5,cytologie
+BvD voor start behandeling,ther_diag_basis,6,histologische bevestiging metastase
+BvD voor start behandeling,ther_diag_basis,7,histologie
+BvD voor start behandeling,ther_diag_basis,8,cytogenetica en/of moleculaire testen
+uitslag punctie,tt_punctie_uitslag,0,negatief
+uitslag punctie,tt_punctie_uitslag,1,positief
+uitslag punctie,tt_punctie_uitslag,9,onbekend
+Indeling naar ja en nee,cci_aids,0,Nee
+Indeling naar ja en nee,cci_aids,1,Ja
+Number of categories according to the Charlson Comorbidity Index,cci_cat,0,0 categorieën
+Number of categories according to the Charlson Comorbidity Index,cci_cat,1,1 categorie
+Number of categories according to the Charlson Comorbidity Index,cci_cat,2,2 of meer categorieën
+Indeling naar ja en nee,cci_chf,0,Nee
+Indeling naar ja en nee,cci_chf,1,Ja
+Indeling naar ja en nee,cci_collagenosis,0,Nee
+Indeling naar ja en nee,cci_collagenosis,1,Ja
+Indeling naar ja en nee,cci_copd,0,Nee
+Indeling naar ja en nee,cci_copd,1,Ja
+Indeling naar ja en nee,cci_cvd,0,Nee
+Indeling naar ja en nee,cci_cvd,1,Ja
+Indeling naar ja en nee,cci_dementia,0,Nee
+Indeling naar ja en nee,cci_dementia,1,Ja
+Indeling naar ja en nee,cci_dm,0,Nee
+Indeling naar ja en nee,cci_dm,1,Ja
+Indeling naar ja en nee,cci_eod_dm,0,Nee
+Indeling naar ja en nee,cci_eod_dm,1,Ja
+Indeling naar ja en nee,cci_mild_liver,0,Nee
+Indeling naar ja en nee,cci_mild_liver,1,Ja
+Indeling naar ja en nee,cci_severe_liver,0,Nee
+Indeling naar ja en nee,cci_severe_liver,1,Ja
+Indeling naar ja en nee,cci_malignancy,0,Nee
+Indeling naar ja en nee,cci_malignancy,1,Ja
+Indeling naar ja en nee,cci_metastatic,0,Nee
+Indeling naar ja en nee,cci_metastatic,1,Ja
+Indeling naar ja en nee,cci_mi,0,Nee
+Indeling naar ja en nee,cci_mi,1,Ja
+Indeling naar ja en nee,cci_plegia,0,Nee
+Indeling naar ja en nee,cci_plegia,1,Ja
+Indeling naar ja en nee,cci_pvd,0,Nee
+Indeling naar ja en nee,cci_pvd,1,Ja
+Indeling naar ja en nee,cci_renal,0,Nee
+Indeling naar ja en nee,cci_renal,1,Ja
+Indeling naar ja en nee,cci_ulcer,0,Nee
+Indeling naar ja en nee,cci_ulcer,1,Ja
+Type van chemotherapie long,chemo_type[1-6],1,Platinumbevattend
+Type van chemotherapie long,chemo_type[1-6],2,Taxaanbevattend
+Type van chemotherapie long,chemo_type[1-6],3,Platinum- en taxaanbevattend
+Type van chemotherapie long,chemo_type[1-6],4,Overig
+Type van chemotherapie long,chemo_type[1-6],9,Onbekend/NNO
+Indeling naar ja en nee,chir,0,Nee
+Indeling naar ja en nee,chir,1,Ja
+gebeurtenis,chir_code[1-3],100000,Chirurgie nno
+gebeurtenis,chir_code[1-3],131C34,Wigexcisie long
+gebeurtenis,chir_code[1-3],132C34,Segmentresectie long
+gebeurtenis,chir_code[1-3],133C34,Bisegmentresectie long
+gebeurtenis,chir_code[1-3],134C34,Lobectomie long
+gebeurtenis,chir_code[1-3],135C34,Bilobectomie
+gebeurtenis,chir_code[1-3],136C34,'Sleeve' lobectomie (bronchoplastiek/bronchoplastische procedure)
+gebeurtenis,chir_code[1-3],140C34,Pneumonectomie
+gebeurtenis,chir_code[1-3],152C34,Carinaresectie
+Radicaliteit,chir_rad[1-3],0,microscopische radicale resectie
+Radicaliteit,chir_rad[1-3],1,microscopische irradicale resectie
+Radicaliteit,chir_rad[1-3],2,macroscopisch irradicale resectie
+Radicaliteit,chir_rad[1-3],9,onbekend
+chirurgische techniek,chir_tech[1-3],0,open chirurgie
+chirurgische techniek,chir_tech[1-3],1,"conventioneel scopisch, geen conversie"
+chirurgische techniek,chir_tech[1-3],11,"conventioneel scopisch, nno"
+chirurgische techniek,chir_tech[1-3],2,"conventioneel scopisch, met conversie"
+chirurgische techniek,chir_tech[1-3],21,"scopisch, geen conversie"
+chirurgische techniek,chir_tech[1-3],22,"scopisch, met conversie"
+chirurgische techniek,chir_tech[1-3],23,"scopisch, nno"
+chirurgische techniek,chir_tech[1-3],3,"robot-geassisteerd, geen conversie"
+chirurgische techniek,chir_tech[1-3],31,"robot-geassisteerd, nno"
+chirurgische techniek,chir_tech[1-3],4,"robot-geassisteerd, met conversie"
+chirurgische techniek,chir_tech[1-3],9,onbekend
+Instelling,chir_zkh[1-3],100,*Medisch Centrum Alkmaar
+Instelling,chir_zkh[1-3],246,Medisch Centrum Leeuwarden
+Instelling,chir_zkh[1-3],269,Medisch Spectrum Twente
+Instelling,chir_zkh[1-3],282,Martini Ziekenhuis
+Instelling,chir_zkh[1-3],297,Amphia
+Instelling,chir_zkh[1-3],299,Jeroen Bosch Ziekenhuis
+Instelling,chir_zkh[1-3],301,Bravis ziekenhuis
+Instelling,chir_zkh[1-3],316,Antoni van Leeuwenhoek
+reden geen behandeling,geen_syst_ther_reden,1,co-morbiditeit
+reden geen behandeling,geen_syst_ther_reden,11,co-morbiditeit en/of performance/functionele status of aanwezigheid andere tumor
+reden geen behandeling,geen_syst_ther_reden,12,(verwachte) snelle progressie of overlijden of hoge tumorload
+reden geen behandeling,geen_syst_ther_reden,13,wens/weigering patiënt/familie
+reden geen behandeling,geen_syst_ther_reden,14,geringe tumorload/weinig klachten
+reden geen behandeling,geen_syst_ther_reden,2,functionele status/conditie patiënt
+reden geen behandeling,geen_syst_ther_reden,6,wens/weigering patiënt/familie
+reden geen behandeling,geen_syst_ther_reden,7,hoge tumorload/te uitgebreide ziekte/progressie
+reden geen behandeling,geen_syst_ther_reden,8,anders (bij opmerkingen vermelden)
+reden geen behandeling,geen_syst_ther_reden,9,onbekend
+Type therapie naar pre- en postchirurgisch ingedeeld,immuno,0,Nee
+Type therapie naar pre- en postchirurgisch ingedeeld,immuno,1,"Ja, alleen prechirurgisch"
+Type therapie naar pre- en postchirurgisch ingedeeld,immuno,2,"Ja, alleen postchirurgisch"
+Type therapie naar pre- en postchirurgisch ingedeeld,immuno,3,"Ja, pre en postchirurgisch"
+Type therapie naar pre- en postchirurgisch ingedeeld,immuno,4,"Ja, geen chirurgie"
+Type therapie naar pre- en postchirurgisch ingedeeld,mut_target,0,Nee
+Type therapie naar pre- en postchirurgisch ingedeeld,mut_target,1,"Ja, alleen prechirurgisch"
+Type therapie naar pre- en postchirurgisch ingedeeld,mut_target,2,"Ja, alleen postchirurgisch"
+Type therapie naar pre- en postchirurgisch ingedeeld,mut_target,3,"Ja, pre en postchirurgisch"
+Type therapie naar pre- en postchirurgisch ingedeeld,mut_target,4,"Ja, geen chirurgie"

@@ -1,0 +1,920 @@
+{
+  "@context": "http://www.w3.org/ns/csvw",
+  "@type": "TableGroup",
+  "dc:title": "IKNL Catalogus Long - Variabelen (dd. 2025-10-02)",
+  "dc:description": "Machine-leesbare beschrijving van de variabelen die worden getoond in de IKNL-gegevenscatalogus voor de collectie Long (longkanker), gegenereerd o.b.v. het bestand Longcatalogus_dd_2025-10-02.xlsx.",
+  "dc:keyword": [
+    "oncologie",
+    "longkanker",
+    "kankerregistratie",
+    "NKR",
+    "IKNL"
+  ],
+  "tables": [
+    {
+      "url": "https://raw.githubusercontent.com/IKNL/EHDS/main/catalogues/long/long_catalogus_variabelen_template.csv",
+      "dc:title": "Long catalogus - variabelen",
+      "dc:keyword": [
+        "Long",
+        "kankerregistratie"
+      ],
+      "tableSchema": {
+        "columns": [
+          {
+            "name": "gebdat",
+            "titles": "Geboortedatum",
+            "dc:description": "Leverbeperking: Data wordt voor deze variabele mogelijk niet 1:1 uitgeleverd vanwege herleidbaarheid en zal worden uitgeleverd in categorieën of intervallen.",
+            "datatype": "date",
+            "iknl:categorie": "Patiëntgegevens",
+            "iknl:collectie": "Kern"
+          },
+          {
+            "name": "gesl",
+            "titles": "Geslacht",
+            "datatype": "string",
+            "iknl:categorie": "Patiëntgegevens",
+            "iknl:collectie": "Kern",
+            "iknl:codelijst": "Geslacht",
+            "iknl:codelijstType": "RANK thesaurus"
+          },
+          {
+            "name": "iacr",
+            "titles": "Telt volgens IACR regels mee in de incidentie",
+            "datatype": "string",
+            "iknl:categorie": "Patiëntgegevens",
+            "iknl:collectie": "Kern",
+            "iknl:codelijst": "Indeling naar ja en nee",
+            "iknl:codelijstType": "DWH waardelijst"
+          },
+          {
+            "name": "incdat",
+            "titles": "Incidentiedatum",
+            "dc:description": "Als incidentiedatum geldt de datum van de eerste histologische of cytologische bevestiging van de tumor. De incidentiedatum kan niet na de datum van aanvang van behandeling liggen. Wanneer de behandeling start voor de histologische bevestiging, is de incidentiedatum de datum van klinische diagnose van de tumor. De incidentiedatum ligt altijd binnen een termijn van 3 maanden na het eerste klinische bezoek in verband met deze tumor. | Leverbeperking: Data wordt voor deze variabele mogelijk niet 1:1 uitgeleverd vanwege herleidbaarheid en zal worden uitgeleverd in categorieën of intervallen.",
+            "datatype": "date",
+            "iknl:categorie": "Patiëntgegevens",
+            "iknl:collectie": "Kern"
+          },
+          {
+            "name": "incjr",
+            "titles": "Incidentiejaar",
+            "dc:description": "Als incidentiedatum geldt de datum van de eerste histologische of cytologische bevestiging van de tumor. De incidentiedatum kan niet na de datum van aanvang van behandeling liggen. Wanneer de behandeling start voor de histologische bevestiging, is de incidentiedatum de datum van klinische diagnose van de tumor. De incidentiedatum ligt altijd binnen een termijn van 3 maanden na het eerste klinische bezoek in verband met deze tumor.",
+            "datatype": "gYear",
+            "iknl:categorie": "Patiëntgegevens",
+            "iknl:collectie": "Kern"
+          },
+          {
+            "name": "ink_ses",
+            "titles": "Mediaan inkomen in postcodegebied als proxy voor sociaaleconomische status (SES)",
+            "dc:description": "Beschikbaar vanaf 2010. Sociaaleconomische status (SES) omvat iemands maatschappelijke positie. Het bepaalt voor een belangrijk deel de gezondheid en hangt onder meer samen met iemands levensverwachting in goede gezondheid. In onderzoek naar de samenhang tussen SES en gezondheid worden doorgaans de indicatoren opleiding, inkomen, beroep en/of materiële welstand gebruikt. Deze variabele berust op inkomen als proxy voor SES. \n\n\n\nEr is gebruik gemaakt van inkomensgegevens per postcodegebied afkomstig van het CBS met 2019 als peiljaar. Deze gegevens zijn op 16-10-2023 gedownload via https://www.cbs.nl/nl-nl/dossier/nederland-regionaal/geografische-data/gegevens-per-postcode. \n\nInkomen is hierbij gedefinieerd als het mediaan besteedbaar huishoudinkomen na correctie voor de grootte en de samenstelling van het huishouden. Per gebied is de mediaan van het gestandaardiseerde inkomen per huishouden vergeleken met de verdeling van dit inkomen voor alle huishoudens in het land, en op basis hiervan ingedeeld in een groep; laag, onder midden, midden, boven midden, of hoog. De bijbehorende inkomensgrenzen (uitgedrukt in euro’s) zijn hier te vinden: https://www.cbs.nl/nl-nl/longread/diversen/2023/statistische-gegevens-per-vierkant-en-postcode-2022-2021-2020-2019/4-beschrijving-cijfers. Omdat het aantal huishoudens per postcodegebied vaak klein is, is er door het CBS ook gekeken naar het 99% betrouwbaarheidsinterval van het mediane inkomen. Wanneer dit interval meerdere groepen (laag, onder midden, midden, boven midden, of hoog) omvat, dan is er een nieuwe groep aangemaakt met als omschrijving het bereik ervan (bijvoorbeeld: ‘laag tot onder midden’). Doordat het betrouwbaarheidsinterval is meegenomen overlappen de categorieën elkaar gedeeltelijk. Wanneer het mediane inkomen gebaseerd is op minder dan 10 huishoudens, dan is het inkomen gecategoriseerd als ‘onclassificeerbaar’. In totaal zijn er 12 inkomenscategorieën die het CBS hanteert.\n\n\n\nVoor deze variabele is het aantal categorieën gereduceerd tot 3 categorieën, zodat het aantal categorieën behapbaar blijft en er geen sprake meer is van overlap in categorieën (en de hieraan verbonden inkomensgrenzen).\n\n\n\nAandachtspunten: \n\n- Inkomen is een momentopname en zegt niets over het reeds opgebouwde vermogen.\n\n- Het betreft geen individuele data maar data per postcodegebied, waarbinnen behoorlijke spreiding voor kan komen.\n\n- Vanwege de aanzienlijke leeftijdsafhankelijkheid van huishoudinkomen is het van belang om bij analyses alleen personen in dezelfde leeftijdscategorie met elkaar te vergelijken.\n\n- Het mediaan besteedbaar inkomen wordt als valide gezien voor een tijdsperiode van maximaal 10 jaar vóór en 10 jaar na het peiljaar (2019)",
+            "datatype": "string",
+            "iknl:categorie": "Patiëntgegevens",
+            "iknl:collectie": "Kern",
+            "iknl:codelijst": "SES score (3 cat) obv mediaan inkomen in postcode van CBS",
+            "iknl:codelijstType": "DWH waardelijst"
+          },
+          {
+            "name": "leeft",
+            "titles": "Leeftijd op incidentiedatum",
+            "dc:description": "Leverbeperking: Leeftijd wordt standaard als categorische variabele geleverd (5-jaars categorieen). In overleg kan hiervan worden afgeweken.",
+            "datatype": "date",
+            "iknl:categorie": "Patiëntgegevens",
+            "iknl:collectie": "Kern"
+          },
+          {
+            "name": "mal",
+            "titles": "Eerdere of latere maligniteiten",
+            "dc:description": "Selectie van maligniteiten te specificeren in aanvraag:\n\n-Periode:  Eerdere maligniteiten en/of latere maligniteiten of op basis van een specifieke periode voorafgaand of rondom incidentiedatum.\n\n-Type: Alle type kanker in NKR, of alle maligne/invasieve (excl. bcc van de huid), of selectie op specifieke tumorsoorten.\n\n\n\nInhoud NKR Database waarvoor volledige beschikbaarheid:\n\nPeriode: Landelijk compleet vanaf 1989\n\nExclusiecriteria:\n\n-\tPatiënten woonachtig in het buitenland ten tijde van incidentie \n\n-\tBasaalcelcarcinomen van de huid en lip\n\n-\tTweede invasieve en tweede niet-invasieve plaveiselcarcinomen van de huid\n\n-\tAdenocarcinoma in situ/hooggradige dysplasie van colon, rectosigmoïd en rectum\n\n-\tCarcinomen in situ van de cervix\n\n-\tGoedaardige/borderline tumoren, uitgezonderd:\n\n      -\tTumoren van het centrale zenuwstelsel vanaf 2001\n\n      -\tBorderline tumoren van ovarium\n\n      -\tAL amyloïdose vanaf 2017\n\n      -\tPolymorfe PTLD",
+            "datatype": "string",
+            "iknl:categorie": "Patiëntgegevens",
+            "iknl:collectie": "Kern",
+            "iknl:codelijst": "Indeling naar ja en nee",
+            "iknl:codelijstType": "DWH waardelijst"
+          },
+          {
+            "name": "mal_incdat",
+            "titles": "Incidentiedatum van de eerdere of latere maligniteit",
+            "dc:description": "Leverbeperking: Data wordt voor deze variabele mogelijk niet 1:1 uitgeleverd vanwege herleidbaarheid en zal worden uitgeleverd in categorieën of intervallen.",
+            "datatype": "date",
+            "iknl:categorie": "Patiëntgegevens",
+            "iknl:collectie": "Kern"
+          },
+          {
+            "name": "mal_int",
+            "titles": "Interval incidentiedatum en datum van de eerdere of latere maligniteit",
+            "datatype": "date",
+            "iknl:categorie": "Patiëntgegevens",
+            "iknl:collectie": "Kern"
+          },
+          {
+            "name": "mal_tumsoort",
+            "titles": "Tumorsoort van de eerdere of latere maligniteit",
+            "dc:description": "Betreft de NKR tumorsoortindeling op basis van lokalisatie, morfologie en gedrag. Voor meer informatie zie: https://iknl.nl/nkr/registratie/tumorindeling",
+            "datatype": "string",
+            "iknl:categorie": "Patiëntgegevens",
+            "iknl:collectie": "Kern"
+          },
+          {
+            "name": "ovldat",
+            "titles": "Overlijdensdatum",
+            "dc:description": "Leverbeperking: Data wordt voor deze variabele mogelijk niet 1:1 uitgeleverd vanwege herleidbaarheid en zal worden uitgeleverd in categorieën of intervallen.",
+            "datatype": "date",
+            "iknl:categorie": "Patiëntgegevens",
+            "iknl:collectie": "Kern"
+          },
+          {
+            "name": "post_cijf",
+            "titles": "Het cijferdeel van de postcode van de patiënt ten tijde van incidentie",
+            "datatype": "string",
+            "iknl:categorie": "Patiëntgegevens",
+            "iknl:collectie": "Kern"
+          },
+          {
+            "name": "vit_stat_dat",
+            "titles": "Datum van vitale status",
+            "dc:description": "Eenmaal per jaar aan het einde van het eerste kwartaal wordt de NKR met de GBA (Gemeentelijke basisadministratie persoonsgegevens) gekoppeld. Het GBA is dan compleet tot februari van dat jaar. De vitale status geeft de status tot maximaal deze datum. Voor de patiënten die volgens de GBA nog in leven zijn is de datum van vitale status de datum tot wanneer de GBA compleet is. Is een patiënt volgens het GBA overleden of geëmigreerd dan is de datum van vitale status de datum van overlijden of emigratie. Met deze datum en de incidentiedatum wordt vervolgens het interval tussen incidentiedatum en datum van vitale status (dagen) berekend. | Leverbeperking: Data wordt voor deze variabele mogelijk niet 1:1 uitgeleverd vanwege herleidbaarheid en zal worden uitgeleverd in categorieën of intervallen.",
+            "datatype": "date",
+            "iknl:categorie": "Patiëntgegevens",
+            "iknl:collectie": "Kern"
+          },
+          {
+            "name": "vit_stat_int",
+            "titles": "Interval incidentiedatum en datum vitale status (dagen)",
+            "dc:description": "Eenmaal per jaar aan het einde van het eerste kwartaal wordt de NKR met de GBA (Gemeentelijke basisadministratie persoonsgegevens) gekoppeld. Het GBA is dan compleet tot februari van dat jaar. De vitale status geeft de status tot maximaal deze datum. Voor de patiënten die volgens de GBA nog in leven zijn is de datum van vitale status de datum tot wanneer de GBA compleet is. Is een patiënt volgens het GBA overleden of geëmigreerd dan is de datum van vitale status de datum van overlijden of emigratie. Met deze datum en de incidentiedatum wordt vervolgens het interval tussen incidentiedatum en datum van vitale status (dagen) berekend.",
+            "datatype": "date",
+            "iknl:categorie": "Patiëntgegevens",
+            "iknl:collectie": "Kern"
+          },
+          {
+            "name": "vit_stat",
+            "titles": "Vitale status",
+            "dc:description": "Eenmaal per jaar aan het einde van het eerste kwartaal wordt de NKR met de GBA (Gemeentelijke basisadministratie persoonsgegevens) gekoppeld. Het GBA is dan compleet tot februari van dat jaar. De vitale status geeft de status tot maximaal deze datum. Voor de patiënten die volgens de GBA nog in leven zijn is de datum van vitale status de datum tot wanneer de GBA compleet is. Is een patiënt volgens het GBA overleden of geëmigreerd dan is de datum van vitale status de datum van overlijden of emigratie. Met deze datum en de incidentiedatum wordt vervolgens het interval tussen incidentiedatum en datum van vitale status (dagen) berekend.",
+            "datatype": "string",
+            "iknl:categorie": "Patiëntgegevens",
+            "iknl:collectie": "Kern",
+            "iknl:codelijst": "Vitale status",
+            "iknl:codelijstType": "DWH waardelijst"
+          },
+          {
+            "name": "topo",
+            "titles": "Topografie exclusief sublokalisatie",
+            "dc:description": "Lokalisatie van de primaire tumor volgens ICD-O-3",
+            "datatype": "string",
+            "iknl:categorie": "Tumorgegevens",
+            "iknl:collectie": "Kern",
+            "iknl:codelijst": "Topografie",
+            "iknl:codelijstType": "RANK thesaurus"
+          },
+          {
+            "name": "topo_sublok",
+            "titles": "Topografie inclusief sublokalisatie",
+            "dc:description": "Lokalisatie en sublokalisatie van de primaire tumor volgens ICD-O-3",
+            "datatype": "string",
+            "iknl:categorie": "Tumorgegevens",
+            "iknl:collectie": "Kern",
+            "iknl:codelijst": "TopografieSublokalisatie",
+            "iknl:codelijstType": "RANK thesaurus"
+          },
+          {
+            "name": "later",
+            "titles": "Lateralisatie",
+            "datatype": "string",
+            "iknl:categorie": "Tumorgegevens",
+            "iknl:collectie": "Long",
+            "iknl:codelijst": "Lateralisatie",
+            "iknl:codelijstType": "RANK thesaurus"
+          },
+          {
+            "name": "morf",
+            "titles": "Morfologie",
+            "dc:description": "Histologisch type van de tumor (de eerste vier tekens van de ICD-O morfologiecode) volgens ICD-O-3.2",
+            "datatype": "string",
+            "iknl:categorie": "Tumorgegevens",
+            "iknl:collectie": "Kern",
+            "iknl:codelijst": "Morfologie",
+            "iknl:codelijstType": "RANK thesaurus"
+          },
+          {
+            "name": "morf_cat",
+            "titles": "Morfologie (categorieën)",
+            "datatype": "string",
+            "iknl:categorie": "Tumorgegevens",
+            "iknl:collectie": "Long",
+            "iknl:codelijst": "Morfologie (categorieën) long",
+            "iknl:codelijstType": "DWH waardelijst"
+          },
+          {
+            "name": "gedrag",
+            "titles": "Gedrag",
+            "dc:description": "Gedrag van de tumor (vijfde teken van de ICD-O morfologiecode)",
+            "datatype": "string",
+            "iknl:categorie": "Tumorgegevens",
+            "iknl:collectie": "Kern",
+            "iknl:codelijst": "Gedrag",
+            "iknl:codelijstType": "RANK thesaurus"
+          },
+          {
+            "name": "diffgrad",
+            "titles": "(Differentiatie)graad",
+            "dc:description": "(Differentiatie)graad van de tumor (zesde teken van de ICD-O morfologiecode)",
+            "datatype": "string",
+            "iknl:categorie": "Tumorgegevens",
+            "iknl:collectie": "Long",
+            "iknl:codelijst": "Differentiatiegraad",
+            "iknl:codelijstType": "RANK thesaurus"
+          },
+          {
+            "name": "ct",
+            "titles": "cT (TNM)",
+            "dc:description": "Voor de TNM-classificatie is gebruik gemaakt van de editie die geldt op het moment van incidentie.\n\nVan 1989 tot en met 1992 4de editie (TNM 4),\n\nvan 1993 tot en met 1998 4de editie 2de revisie (TNM 4),\n\nvan 1999 tot en met 2002 is dit TNM classificatie 5de editie (TNM 5), \n\nvan 2003 tot en met 2009 is dit TNM classificatie 6de editie (TNM 6),\n\nvan 2010 tot en met 2016 is dit TNM classificatie 7de editie (TNM 7),\n\nen vanaf 2017 is dit TNM classificatie 8de editie (TNM 8).",
+            "datatype": "string",
+            "iknl:categorie": "Tumorgegevens",
+            "iknl:collectie": "Long",
+            "iknl:codelijst": "ct",
+            "iknl:codelijstType": "voorkomende waarden"
+          },
+          {
+            "name": "cn",
+            "titles": "cN (TNM)",
+            "dc:description": "Voor de TNM-classificatie is gebruik gemaakt van de editie die geldt op het moment van incidentie.\n\nVan 1989 tot en met 1992 4de editie (TNM 4),\n\nvan 1993 tot en met 1998 4de editie 2de revisie (TNM 4),\n\nvan 1999 tot en met 2002 is dit TNM classificatie 5de editie (TNM 5), \n\nvan 2003 tot en met 2009 is dit TNM classificatie 6de editie (TNM 6),\n\nvan 2010 tot en met 2016 is dit TNM classificatie 7de editie (TNM 7),\n\nen vanaf 2017 is dit TNM classificatie 8de editie (TNM 8).",
+            "datatype": "string",
+            "iknl:categorie": "Tumorgegevens",
+            "iknl:collectie": "Long",
+            "iknl:codelijst": "cn",
+            "iknl:codelijstType": "voorkomende waarden"
+          },
+          {
+            "name": "cm",
+            "titles": "cM (TNM)",
+            "dc:description": "Voor de TNM-classificatie is gebruik gemaakt van de editie die geldt op het moment van incidentie.\n\nVan 1989 tot en met 1992 4de editie (TNM 4),\n\nvan 1993 tot en met 1998 4de editie 2de revisie (TNM 4),\n\nvan 1999 tot en met 2002 is dit TNM classificatie 5de editie (TNM 5), \n\nvan 2003 tot en met 2009 is dit TNM classificatie 6de editie (TNM 6),\n\nvan 2010 tot en met 2016 is dit TNM classificatie 7de editie (TNM 7),\n\nen vanaf 2017 is dit TNM classificatie 8de editie (TNM 8).",
+            "datatype": "string",
+            "iknl:categorie": "Tumorgegevens",
+            "iknl:collectie": "Long",
+            "iknl:codelijst": "cm",
+            "iknl:codelijstType": "voorkomende waarden"
+          },
+          {
+            "name": "pt",
+            "titles": "pT (TNM)",
+            "dc:description": "Voor de TNM-classificatie is gebruik gemaakt van de editie die geldt op het moment van incidentie.\n\nVan 1989 tot en met 1992 4de editie (TNM 4),\n\nvan 1993 tot en met 1998 4de editie 2de revisie (TNM 4),\n\nvan 1999 tot en met 2002 is dit TNM classificatie 5de editie (TNM 5), \n\nvan 2003 tot en met 2009 is dit TNM classificatie 6de editie (TNM 6),\n\nvan 2010 tot en met 2016 is dit TNM classificatie 7de editie (TNM 7),\n\nen vanaf 2017 is dit TNM classificatie 8de editie (TNM 8).",
+            "datatype": "string",
+            "iknl:categorie": "Tumorgegevens",
+            "iknl:collectie": "Long",
+            "iknl:codelijst": "pt",
+            "iknl:codelijstType": "voorkomende waarden"
+          },
+          {
+            "name": "pn",
+            "titles": "pN (TNM)",
+            "dc:description": "Voor de TNM-classificatie is gebruik gemaakt van de editie die geldt op het moment van incidentie.\n\n\n\nBetekenis laatste teken van de pN:\n\nS: Uitslag alleen gebaseerd op onderzoek van de schildwachtklier (sn)\n\nI: Geïsoleerde tumorcellen (ITC)\n\nM: Micrometastasen (mi)",
+            "datatype": "string",
+            "iknl:categorie": "Tumorgegevens",
+            "iknl:collectie": "Long",
+            "iknl:codelijst": "pn",
+            "iknl:codelijstType": "voorkomende waarden"
+          },
+          {
+            "name": "pm",
+            "titles": "pM (TNM)",
+            "dc:description": "Voor de TNM-classificatie is gebruik gemaakt van de editie die geldt op het moment van incidentie.\n\nVan 1989 tot en met 1992 4de editie (TNM 4),\n\nvan 1993 tot en met 1998 4de editie 2de revisie (TNM 4),\n\nvan 1999 tot en met 2002 is dit TNM classificatie 5de editie (TNM 5), \n\nvan 2003 tot en met 2009 is dit TNM classificatie 6de editie (TNM 6),\n\nvan 2010 tot en met 2016 is dit TNM classificatie 7de editie (TNM 7),\n\nen vanaf 2017 is dit TNM classificatie 8de editie (TNM 8).",
+            "datatype": "string",
+            "iknl:categorie": "Tumorgegevens",
+            "iknl:collectie": "Long",
+            "iknl:codelijst": "pm",
+            "iknl:codelijstType": "voorkomende waarden"
+          },
+          {
+            "name": "cstadium",
+            "titles": "Klinisch TNM-stadium",
+            "dc:description": "cstadium: Het klinisch stadium wordt gebaseerd op de cTNM. De cTNM wordt gebaseerd op informatie verkregen voor aanvang van de (neoadjuvante) behandeling, inclusief bevindingen tijdens chirurgische ingrepen (wanneer niet neoadjuvant behandeld) die van invloed zijn op het behandelplan.\n\nBetekenis “X” (onbekend): Het juiste stadium kan niet berekend worden, bijvoorbeeld bij TX/NX/M0. Betekenis “M” (missing): Een M wordt weergegeven als er geen TNM is ingevuld. Dit kan het geval zijn als de registratie nog niet volledig is afgerond, of er kan gebruik gemaakt zijn van de EoD-stadiëring in plaats van de TNM-stadiëring. Betekenis stadium “NVT” (niet van toepassing): TNM-stadium is niet van toepassing voor de betreffende tumorsoort in deze incidentieperiode.",
+            "datatype": "string",
+            "iknl:categorie": "Tumorgegevens",
+            "iknl:collectie": "Long",
+            "iknl:codelijst": "cstadium",
+            "iknl:codelijstType": "voorkomende waarden"
+          },
+          {
+            "name": "pstadium",
+            "titles": "Pathologisch TNM-stadium",
+            "dc:description": "Voor de TNM-classificatie is gebruik gemaakt van de editie die geldt op het moment van incidentie.\n\nVan 1989 tot en met 1992 4de editie (TNM 4),\n\nvan 1993 tot en met 1998 4de editie 2de revisie (TNM 4),\n\nvan 1999 tot en met 2002 is dit TNM classificatie 5de editie (TNM 5), \n\nvan 2003 tot en met 2009 is dit TNM classificatie 6de editie (TNM 6),\n\nvan 2010 tot en met 2016 is dit TNM classificatie 7de editie (TNM 7),\n\nen vanaf 2017 is dit TNM classificatie 8de editie (TNM 8).\n\n\n\npstadium: Het pathologisch (post-chirurgisch) stadium wordt gebaseerd op de pT, de pN en de cM/pM. Ook in het geval van prechirurgische therapie is er gekeken naar de pT en de pN (de ypT en ypN in dat geval). Wanneer er na prechirurgische therapie geen tumor meer aantoonbaar is wordt dit weergegeven als stadiump=0.\n\nBetekenis “X” (onbekend): Het juiste stadium kan niet berekend worden, bijvoorbeeld bij TX/NX/M0. Betekenis “M” (missing): Een M wordt weergegeven als er geen TNM is ingevuld. Dit kan het geval zijn als de registratie nog niet volledig is afgerond, of er kan gebruik gemaakt zijn van de EoD-stadiëring in plaats van de TNM-stadiëring. Betekenis stadium “NVT” (niet van toepassing): TNM-stadium is niet van toepassing voor de betreffende tumorsoort in deze incidentieperiode.",
+            "datatype": "string",
+            "iknl:categorie": "Tumorgegevens",
+            "iknl:collectie": "Long",
+            "iknl:codelijst": "pstadium",
+            "iknl:codelijstType": "voorkomende waarden"
+          },
+          {
+            "name": "stadium",
+            "titles": "TNM-stadium",
+            "dc:description": "Voor de TNM-classificatie is gebruik gemaakt van de editie die geldt op het moment van incidentie.\n\nVan 1989 tot en met 1992 4de editie (TNM 4),\n\nvan 1993 tot en met 1998 4de editie 2de revisie (TNM 4),\n\nvan 1999 tot en met 2002 is dit TNM classificatie 5de editie (TNM 5), \n\nvan 2003 tot en met 2009 is dit TNM classificatie 6de editie (TNM 6),\n\nvan 2010 tot en met 2016 is dit TNM classificatie 7de editie (TNM 7),\n\nen vanaf 2017 is dit TNM classificatie 8de editie (TNM 8).\n\n\n\nStadium: Het stadium op basis van pTNM aangevuld met cTNM dat zo goed als mogelijk het daadwerkelijke stadium van de tumor weergeeft ten tijde van diagnose. In eerste instantie wordt gekeken naar de waarden van de pTNM. Wanneer er geen chirurgie heeft plaatsgevonden, de waarde van de pTNM onbekend is, of er is sprake van prechirurgische therapie (de pTNM is dan een ypTNM) dan is er gekeken naar de waarden in de cTNM. \n\nBetekenis “X” (onbekend): Het juiste stadium kan niet berekend worden, bijvoorbeeld bij TX/NX/M0. Betekenis “M” (missing): Een M wordt weergegeven als er geen TNM is ingevuld. Dit kan het geval zijn als de registratie nog niet volledig is afgerond, of er kan gebruik gemaakt zijn van de EoD-stadiëring in plaats van de TNM-stadiëring. Betekenis stadium “NVT” (niet van toepassing): TNM-stadium is niet van toepassing voor de betreffende tumorsoort in deze incidentieperiode.",
+            "datatype": "string",
+            "iknl:categorie": "Tumorgegevens",
+            "iknl:collectie": "Long",
+            "iknl:codelijst": "stadium",
+            "iknl:codelijstType": "voorkomende waarden"
+          },
+          {
+            "name": "ceod",
+            "titles": "Klinische tumoruitbreiding (EoD)",
+            "dc:description": "De ‘Extent of Disease’ (EoD)-stadiëring wordt gebruikt voor solide tumoren waarvoor geen gangbare andere stadiëring zoals de TNM-stadiëring bestaat  De EoD-stadiëring werd ook gebruikt bij morfologie M8000 (geen PA-bevestiging) tot incidentiedatum 01-01-2012.",
+            "datatype": "string",
+            "iknl:categorie": "Tumorgegevens",
+            "iknl:collectie": "Long",
+            "iknl:codelijst": "Eod",
+            "iknl:codelijstType": "RANK thesaurus"
+          },
+          {
+            "name": "peod",
+            "titles": "Pathologische tumoruitbreiding (EoD)",
+            "dc:description": "De ‘Extent of Disease’ (EoD)-stadiëring wordt gebruikt voor solide tumoren waarvoor geen gangbare andere stadiëring zoals de TNM-stadiëring bestaat  De EoD-stadiëring werd ook gebruikt bij morfologie M8000 (geen PA-bevestiging) tot incidentiedatum 01-01-2012.",
+            "datatype": "string",
+            "iknl:categorie": "Tumorgegevens",
+            "iknl:collectie": "Long",
+            "iknl:codelijst": "Eod",
+            "iknl:codelijstType": "RANK thesaurus"
+          },
+          {
+            "name": "ond_lymf",
+            "titles": "Aantal onderzochte regionale lymfeklieren",
+            "dc:description": "Alle lymfklieren die in het kader van initiële diagnostiek en behandeling zijn onderzocht bij elkaar opgeteld.",
+            "datatype": "integer",
+            "iknl:categorie": "Tumorgegevens",
+            "iknl:collectie": "Long"
+          },
+          {
+            "name": "pos_lymf",
+            "titles": "Aantal positieve regionale lymfeklieren",
+            "datatype": "integer",
+            "iknl:categorie": "Tumorgegevens",
+            "iknl:collectie": "Long"
+          },
+          {
+            "name": "diag_basis",
+            "titles": "Basis voor diagnose",
+            "dc:description": "Niet microscopisch bevestigd\n\n0 = alleen overlijdensverklaring beschikbaar\n\n1 = alleen klinisch onderzoek (anamnese en lichamelijk onderzoek)\n\n2 = klinisch-diagnostische onderzoeken, exploratieve chirurgie of obductie (zonder microscopisch bevestiging)\n\n4 = specifieke biochemische en/of immunologische laboratoriumonderzoeken\n\n\n\nMicroscopisch bevestigd\n\n5 = hematologische (beenmergcytologie = bijvoorbeeld beenmergpunctie, bloeduitstrijk) of cytologische bevestiging van de primaire tumor of metastasen, of microscopische bevestiging zeker, maar onduidelijk of dit cytologie of histologie betreft\n\n6 = histologische bevestiging uitsluitend van metastase(n), inclusief bij obductie\n\n7 = histologische bevestiging van de primaire tumor, of onduidelijk of histologische bevestiging de primaire tumor of een metastase betreft, obductie (met histologische bevestiging)",
+            "datatype": "string",
+            "iknl:categorie": "Tumorgegevens",
+            "iknl:collectie": "Kern",
+            "iknl:codelijst": "Basisdiagnose",
+            "iknl:codelijstType": "RANK thesaurus"
+          },
+          {
+            "name": "dlco",
+            "titles": "DLCO (%) ten opzichte van normaalwaarde",
+            "dc:description": "Beschikbaar van 2020 t/m 2022. Betreft de diffusiecapaciteit van de long voor koolmonoxide (DLCO). De gemeten diffusiecapaciteit wordt weergegeven als percentage van de berekende waarde voor een gezond persoon. De DLCO is afhankelijk van geslacht, leeftijd, lengte en hemoglobinegehalte.",
+            "datatype": "decimal",
+            "iknl:categorie": "Tumorgegevens",
+            "iknl:collectie": "Long"
+          },
+          {
+            "name": "fev1",
+            "titles": "FEV-1 (%) ten opzichte van normaalwaarde",
+            "dc:description": "Beschikbaar van 2020 t/m 2022. Betreft het volume dat in de eerste seconde kan worden uitgeademd tijdens een geforceerde uitademingsmanoeuvre vanaf het niveau van de totale longcapaciteit, ten opzichte van de normaalwaarde. Deze normaalwaarde is afhankelijk van verschillende factoren, zoals geslacht, leeftijd en lengte.",
+            "datatype": "decimal",
+            "iknl:categorie": "Tumorgegevens",
+            "iknl:collectie": "Long"
+          },
+          {
+            "name": "klin_tum_afm",
+            "titles": "Klinische maximale afmeting van de primaire tumor (mm)",
+            "dc:description": "Beschikbaar vanaf 2015.\n\nBetreft de maximale klinische  afmeting van de primaire tumor zoals vastgesteld op de CT-scan, of op PET(/CT) wanneer er geen CT beschikbaar is. In het geval van een multifocale tumor is de tumorgrootte van de grootste tumor vastgelegd.",
+            "datatype": "decimal",
+            "iknl:categorie": "Tumorgegevens",
+            "iknl:collectie": "Long"
+          },
+          {
+            "name": "longtum_voor_int",
+            "titles": "Interval incidentiedatum eerdere primaire longtumor en huidige longtumor (dagen)",
+            "dc:description": "Indien er sprake is van meerdere primaire longtumoren in de voorgeschiedenis, wordt hier het interval beschreven vanaf de laatste, meest recent opgetreden longtumor voorafgaand aan de huidige longtumor. Hierbij worden alle eerdere longkankerdiagnosen in acht genomen, tot aan de dag vóór de huidige longtumor. De NKR is volledig vanaf 1989, dus incidenties van daarvoor kunnen mogelijk gemist worden.\n\n\n\nAls incidentiedatums gelden de datums van de eerste histologische of cytologische bevestiging van de primaire tumoren.",
+            "datatype": "date",
+            "iknl:categorie": "Tumorgegevens",
+            "iknl:collectie": "Long"
+          },
+          {
+            "name": "longtum_voor",
+            "titles": "Primaire longtumor in de voorgeschiedenis",
+            "dc:description": "Beschrijft of er voorafgaand aan de longtumor in kwestie al eerder een primaire longtumor is opgetreden. Hierbij worden alle eerdere longkankerdiagnosen in acht genomen, tot aan de dag vóór de huidige longtumor. De NKR is volledig vanaf 1989, dus incidenties van daarvoor kunnen mogelijk gemist worden.",
+            "datatype": "string",
+            "iknl:categorie": "Tumorgegevens",
+            "iknl:collectie": "Long",
+            "iknl:codelijst": "Indeling naar ja en nee",
+            "iknl:codelijstType": "DWH waardelijst"
+          },
+          {
+            "name": "meta_incdat",
+            "titles": "Incidentiedatum van metastase",
+            "dc:description": "Leverbeperking: Data wordt voor deze variabele mogelijk niet 1:1 uitgeleverd vanwege herleidbaarheid en zal worden uitgeleverd in categorieën of intervallen.",
+            "datatype": "date",
+            "iknl:categorie": "Tumorgegevens",
+            "iknl:collectie": "Metastase"
+          },
+          {
+            "name": "meta_int",
+            "titles": "Interval incidentiedatum en datum van metastase (dagen)",
+            "dc:description": "Als incidentiedatum geldt de datum van de eerste histologische of cytologische bevestiging van de primaire tumor.\n\nAls datum van de metastase geldt de datum van de eerste histologische of cytologische bevestiging van de metastase. De datum van klinische diagnose wordt aangehouden indien er niet binnen 3 maanden sprake is van histologische bevestiging. De datum van metastase kan daarom maximaal 3 maanden voor de incidentiedatum van de primaire tumor liggen.",
+            "datatype": "date",
+            "iknl:categorie": "Tumorgegevens",
+            "iknl:collectie": "Metastase"
+          },
+          {
+            "name": "meta_topo_sublok",
+            "titles": "Topografie inclusief sublokalisatie van metastase",
+            "dc:description": "Lokalisatie van de metastase volgens ICD-O-3. Lokalisaties van metastasen werden vanaf 2008 in alle regio’s geregistreerd. Bij metastasen op afstand op meer dan drie plaatsen, is t/m 2014 bij meta3 C768 gecodeerd om aan te geven dat er meer metastasen waren dan 3 lokalisaties. Bij recentere registraties is soms C768 gecodeerd om aan te geven dat er meer metastasen waren dan 4 lokalisaties.\n\n\n\nVerklaring records waar cm en pm beide niets aangeven over metastasen terwijl er wel metastaselokalisaties bij diagnose zijn geregistreerd: De cTNM wordt gebaseerd op informatie verkregen voor aanvang van de (neoadjuvante) behandeling, inclusief bevindingen tijdens chirurgische ingrepen (wanneer niet neoadjuvant behandeld) die van invloed zijn op het behandelplan. De pM geeft aan over er PA-bevestiging is van de metastase op afstand. Indien er tijdens of na afronding van de neoadjuvante behandeling metastasen worden aangetroffen dan wordt de registratie van de TNM niet meer aangepast, maar wordt wel alsnog de metastaselokalisatie geregistreerd.\n\n\n\nIndien in de dataset ook metastaselokalisaties na progressie zijn opgenomen: In de NKR worden bij progressie alleen nieuwe en/of gegroeide lokalisaties van metastase(n) vastgelegd, dus niet alle op het moment van progressie nog aanwezige metastasen worden nogmaals vastgelegd. C809 wordt gecodeerd bij klinische progressie, waarbij niet bekend is waar de progressie zit.",
+            "datatype": "string",
+            "iknl:categorie": "Tumorgegevens",
+            "iknl:collectie": "Metastase",
+            "iknl:codelijst": "TopografieSublokalisatie",
+            "iknl:codelijstType": "RANK thesaurus"
+          },
+          {
+            "name": "meta_topo",
+            "titles": "Topografie exclusief sublokalisatie van metastase",
+            "dc:description": "Lokalisatie van de metastase volgens ICD-O-3. Lokalisaties van metastasen werden vanaf 2008 in alle regio’s geregistreerd. Bij metastasen op afstand op meer dan drie plaatsen, is t/m 2014 bij meta3 C768 gecodeerd om aan te geven dat er meer metastasen waren dan 3 lokalisaties. Bij recentere registraties is soms C768 gecodeerd om aan te geven dat er meer metastasen waren dan 4 lokalisaties.\n\n\n\nVerklaring records waar cm en pm beide niets aangeven over metastasen terwijl er wel metastaselokalisaties bij diagnose zijn geregistreerd: De cTNM wordt gebaseerd op informatie verkregen voor aanvang van de (neoadjuvante) behandeling, inclusief bevindingen tijdens chirurgische ingrepen (wanneer niet neoadjuvant behandeld) die van invloed zijn op het behandelplan. De pM geeft aan over er PA-bevestiging is van de metastase op afstand. Indien er tijdens of na afronding van de neoadjuvante behandeling metastasen worden aangetroffen dan wordt de registratie van de TNM niet meer aangepast, maar wordt wel alsnog de metastaselokalisatie geregistreerd.\n\n\n\nIndien in de dataset ook metastaselokalisaties na progressie zijn opgenomen: In de NKR worden bij progressie alleen nieuwe en/of gegroeide lokalisaties van metastase(n) vastgelegd, dus niet alle op het moment van progressie nog aanwezige metastasen worden nogmaals vastgelegd. C809 wordt gecodeerd bij klinische progressie, waarbij niet bekend is waar de progressie zit.",
+            "datatype": "string",
+            "iknl:categorie": "Tumorgegevens",
+            "iknl:collectie": "Metastase",
+            "iknl:codelijst": "Topografie",
+            "iknl:codelijstType": "RANK thesaurus"
+          },
+          {
+            "name": "multifoc",
+            "titles": "Multifocaliteit tumor",
+            "datatype": "string",
+            "iknl:categorie": "Tumorgegevens",
+            "iknl:collectie": "Long",
+            "iknl:codelijst": "Indeling naar ja, nee en onbekend",
+            "iknl:codelijstType": "RANK detail"
+          },
+          {
+            "name": "pa_tum_afm",
+            "titles": "Pathologische maximale afmeting van de primaire tumor (mm)",
+            "dc:description": "Beschikbaar vanaf 2015.\n\nBetreft de pathologische afmeting van de primaire tumor, op basis van longchirurgie. Hierbij wordt alleen het invasieve gedeelte van de tumor in acht genomen.\n\nIn het geval van meerdere longchirurgieën, en dus meerdere pathologieverslagen, wordt in deze variabele de maximale pathologische tumorgrootte weergegeven",
+            "datatype": "decimal",
+            "iknl:categorie": "Tumorgegevens",
+            "iknl:collectie": "Long"
+          },
+          {
+            "name": "pdl1_cat",
+            "titles": "PD-L1-receptorwaarde (%) in categorieën",
+            "dc:description": "Beschikbaar vanaf 2018. \n\nWanneer er meerdere PD-L1-testen zijn uitgevoerd is alleen de hoogste waarde vastgelegd.",
+            "datatype": "string",
+            "iknl:categorie": "Tumorgegevens",
+            "iknl:collectie": "Long",
+            "iknl:codelijst": "PD-L1-receptorwaarde (%) in categorieën",
+            "iknl:codelijstType": "DWH waardelijst"
+          },
+          {
+            "name": "smplc",
+            "titles": "Synchrone multiple primaire longkanker (sMPLC)",
+            "dc:description": "Er wordt gesproken van synchrone multipele primaire longkanker (sMPLC) wanneer er maximaal 90 dagen voor óf na de diagnose in kwestie een andere primaire incidentie van longkanker is opgetreden.",
+            "datatype": "string",
+            "iknl:categorie": "Tumorgegevens",
+            "iknl:collectie": "Long",
+            "iknl:codelijst": "Indeling naar ja en nee",
+            "iknl:codelijstType": "DWH waardelijst"
+          },
+          {
+            "name": "sulc_sup",
+            "titles": "Sulcus superior",
+            "dc:description": "Beschikbaar vanaf 2015",
+            "datatype": "string",
+            "iknl:categorie": "Tumorgegevens",
+            "iknl:collectie": "Long",
+            "iknl:codelijst": "Sulcus superior",
+            "iknl:codelijstType": "RANK detail"
+          },
+          {
+            "name": "contact_zkh1",
+            "titles": "Ziekenhuis van eerste contact i.v.m. maligniteit",
+            "dc:description": "Het eerste ziekenhuis waar de patiënt is geweest in verband met klachten gerelateerd aan de maligniteit, en waar op basis van dat bezoek een (verdenking op) maligniteit wordt afgegeven. | Leverbeperking: Data wordt voor deze variabele mogelijk niet 1:1 uitgeleverd vanwege herleidbaarheid en zal worden uitgeleverd in categorieën of intervallen.",
+            "datatype": "string",
+            "iknl:categorie": "Procesgegevens",
+            "iknl:collectie": "Kern",
+            "iknl:codelijst": "Instelling",
+            "iknl:codelijstType": "RANK thesaurus"
+          },
+          {
+            "name": "diag_reden",
+            "titles": "Reden voor diagnostiek",
+            "dc:description": "Beschikbaar vanaf 2018",
+            "datatype": "string",
+            "iknl:categorie": "Procesgegevens",
+            "iknl:collectie": "Long",
+            "iknl:codelijst": "Reden voor diagnostiek",
+            "iknl:codelijstType": "RANK detail"
+          },
+          {
+            "name": "mol_diag_type",
+            "titles": "Type van moleculaire diagnostiek",
+            "dc:description": "Beschikbaar vanaf 2023.\n\nIn het geval van meerdere onderzoeken is het meest uitgebreide onderzoek vastgelegd.",
+            "datatype": "string",
+            "iknl:categorie": "Procesgegevens",
+            "iknl:collectie": "Long",
+            "iknl:codelijst": "Soort moleculaire diagnostiek",
+            "iknl:codelijstType": "RANK detail"
+          },
+          {
+            "name": "navbroncho_dat",
+            "titles": "Datum van navigatiebronchoscopie",
+            "dc:description": "Beschikbaar vanaf 2023. | Leverbeperking: Data wordt voor deze variabele mogelijk niet 1:1 uitgeleverd vanwege herleidbaarheid en zal worden uitgeleverd in categorieën of intervallen.",
+            "datatype": "date",
+            "iknl:categorie": "Procesgegevens",
+            "iknl:collectie": "Long"
+          },
+          {
+            "name": "navbroncho_int",
+            "titles": "Interval incidentiedatum en datum van navigatiebronchoscopie (dagen)",
+            "dc:description": "Beschikbaar vanaf 2023.\n\nAls incidentiedatum geldt de datum van de eerste histologische of cytologische bevestiging van de primaire tumor.",
+            "datatype": "date",
+            "iknl:categorie": "Procesgegevens",
+            "iknl:collectie": "Long"
+          },
+          {
+            "name": "navbroncho_uitslag",
+            "titles": "Uitslag van navigatiebronchoscopie",
+            "dc:description": "Beschikbaar vanaf 2023.\n\nDe navigatie van deze bronchoscopie vindt CT-geleid plaats. In het geval van meerdere navigatiebronchoscopieën is alleen de laatste vastgelegd die is uitgevoerd tijdens het diagnostisch proces.",
+            "datatype": "string",
+            "iknl:categorie": "Procesgegevens",
+            "iknl:collectie": "Long",
+            "iknl:codelijst": "Uitslag navigatiebronchoscopie",
+            "iknl:codelijstType": "RANK detail"
+          },
+          {
+            "name": "navbroncho_zkh",
+            "titles": "Ziekenhuis van navigatiebronchoscopie",
+            "dc:description": "Beschikbaar vanaf 2023. | Leverbeperking: Data wordt voor deze variabele mogelijk niet 1:1 uitgeleverd vanwege herleidbaarheid en zal worden uitgeleverd in categorieën of intervallen.",
+            "datatype": "string",
+            "iknl:categorie": "Procesgegevens",
+            "iknl:collectie": "Long",
+            "iknl:codelijst": "Instelling",
+            "iknl:codelijstType": "RANK thesaurus"
+          },
+          {
+            "name": "rev_dat",
+            "titles": "Datum van revisie",
+            "dc:description": "Leverbeperking: Data wordt voor deze variabele mogelijk niet 1:1 uitgeleverd vanwege herleidbaarheid en zal worden uitgeleverd in categorieën of intervallen.",
+            "datatype": "date",
+            "iknl:categorie": "Procesgegevens",
+            "iknl:collectie": "Long"
+          },
+          {
+            "name": "ther_diag_basis",
+            "titles": "Basis voor diagnose vóór start van therapie",
+            "dc:description": "Beschikbaar vanaf 2020.\n\nBetreft de basis voor diagnose, bepaald voorafgaand aan de start van de eerste behandeling of voor het besluit niet te behandelen.",
+            "datatype": "string",
+            "iknl:categorie": "Procesgegevens",
+            "iknl:collectie": "Long",
+            "iknl:codelijst": "BvD voor start behandeling",
+            "iknl:codelijstType": "RANK detail"
+          },
+          {
+            "name": "tt_punctie",
+            "titles": "Transthoracale punctie uitgevoerd",
+            "dc:description": "Beschikbaar vanaf 2017.",
+            "datatype": "string",
+            "iknl:categorie": "Procesgegevens",
+            "iknl:collectie": "Long"
+          },
+          {
+            "name": "tt_punctie_uitslag",
+            "titles": "Meest informatieve uitslag van transthoracale punctie",
+            "dc:description": "In het geval van meerdere uitgevoerde transthoracale puncties beschrijft deze variabele de meest informatieve uitslag. Beschikbaar van 2017 t/m 2022.",
+            "datatype": "string",
+            "iknl:categorie": "Procesgegevens",
+            "iknl:collectie": "Long",
+            "iknl:codelijst": "uitslag punctie"
+          },
+          {
+            "name": "zkh_patnum",
+            "titles": "Patiëntnummer in zkh",
+            "dc:description": "Leverbeperking: Deze variabele wordt in principe niet uitgeleverd vanwege herleidbaarheid.",
+            "datatype": "string",
+            "iknl:categorie": "Procesgegevens",
+            "iknl:collectie": "Kern"
+          },
+          {
+            "name": "cci",
+            "titles": "Charlson Comorbidity Index (weighted)",
+            "dc:description": "Comorbiditeiten: \n\nHet betreffen comorbiditeiten die aanwezig zijn bij diagnose of ontstaan na de incidentiedatum maar voor de start van behandeling en invloed hebben op het behandelplan.\n\n\n\nHieronder vallen de variabelen beginnend met CCI, welke zijn gebaseerd op de Charlson Comorbdity Index (Charlson, 1987 - A new method of classifying prognostic comorbidity in longitudinal studies; development and validation) \n\n \n\nDe verschillende nee/ja variabelen van de categorieën zijn samengevat in de variabelen cci_cat (0, 1, 2 of meer) en cci (gewogen score volgens Charlson 1987), waarbij sommige categorieën maar eenmalig meetellen als ze beide voorkomen:  \n\n•\tCerebrovascular disease en Hemiplegia \n\n•\tDiabetes en Diabetes with end organ damage \n\n•\tMild liver disease en moderate or severe liver disease \n\n•\tAny tumor en Metastatic solid tumor \n\nUiteraard is het ook mogelijk om andere keuzes voor samenvattende scores te maken. \n\n\n\nOnvolledigheden in scores \n\nVanaf 2019 is de registratie op de Charlson Comorbidity Index afgestemd. Van registraties uit eerdere jaren kunnen daardoor niet alle categorieën goed bepaald worden. Met name in eerdere jaren zullen deze afwijkingen leiden tot enige mate van misclassificatie en staan bij de betreffende variabele beschreven.  \n\n\n\nOpmerking: Van 1995 tot 2014 zijn comorbiditeiten alleen in de zuidelijke regio van Nederland geregistreerd. Vanaf 2015 gebeurt dit soms wel landelijk, maar lang niet voor alle tumorsoorten en incidentiejaren. Wanneer de variabelen missing zijn, betekent dat dat er geen comorbiditeiten zijn vastgelegd bij deze tumor.",
+            "datatype": "string",
+            "iknl:categorie": "Risicofactoren",
+            "iknl:collectie": "Comorbiditeit"
+          },
+          {
+            "name": "cci_aids",
+            "titles": "AIDS (including HIV) according to the Charlson Comorbidity Index",
+            "datatype": "string",
+            "iknl:categorie": "Risicofactoren",
+            "iknl:collectie": "Comorbiditeit",
+            "iknl:codelijst": "Indeling naar ja en nee",
+            "iknl:codelijstType": "DWH waardelijst"
+          },
+          {
+            "name": "cci_cat",
+            "titles": "Number of categories according to the Charlson Comorbidity Index",
+            "dc:description": "Comorbiditeiten: \n\nHet betreffen comorbiditeiten die aanwezig zijn bij diagnose of ontstaan na de incidentiedatum maar voor de start van behandeling en invloed hebben op het behandelplan.\n\n\n\nHieronder vallen de variabelen beginnend met CCI, welke zijn gebaseerd op de Charlson Comorbdity Index (Charlson, 1987 - A new method of classifying prognostic comorbidity in longitudinal studies; development and validation) \n\n \n\nDe verschillende nee/ja variabelen van de categorieën zijn samengevat in de variabelen cci_cat (0, 1, 2 of meer) en cci (gewogen score volgens Charlson 1987), waarbij sommige categorieën maar eenmalig meetellen als ze beide voorkomen:  \n\n•\tCerebrovascular disease en Hemiplegia \n\n•\tDiabetes en Diabetes with end organ damage \n\n•\tMild liver disease en moderate or severe liver disease \n\n•\tAny tumor en Metastatic solid tumor \n\nUiteraard is het ook mogelijk om andere keuzes voor samenvattende scores te maken. \n\n\n\nOnvolledigheden in scores \n\nVanaf 2019 is de registratie op de Charlson Comorbidity Index afgestemd. Van registraties uit eerdere jaren kunnen daardoor niet alle categorieën goed bepaald worden. Met name in eerdere jaren zullen deze afwijkingen leiden tot enige mate van misclassificatie en staan bij de betreffende variabele beschreven.  \n\n\n\nOpmerking: Van 1995 tot 2014 zijn comorbiditeiten alleen in de zuidelijke regio van Nederland geregistreerd. Vanaf 2015 gebeurt dit soms wel landelijk, maar lang niet voor alle tumorsoorten en incidentiejaren. Wanneer de variabelen missing zijn, betekent dat dat er geen comorbiditeiten zijn vastgelegd bij deze tumor.",
+            "datatype": "string",
+            "iknl:categorie": "Risicofactoren",
+            "iknl:collectie": "Comorbiditeit",
+            "iknl:codelijst": "Number of categories according to the Charlson Comorbidity Index",
+            "iknl:codelijstType": "DWH waardelijst"
+          },
+          {
+            "name": "cci_chf",
+            "titles": "Congestive heart failue according to the Charlson Comorbidity Index",
+            "datatype": "string",
+            "iknl:categorie": "Risicofactoren",
+            "iknl:collectie": "Comorbiditeit",
+            "iknl:codelijst": "Indeling naar ja en nee",
+            "iknl:codelijstType": "DWH waardelijst"
+          },
+          {
+            "name": "cci_collagenosis",
+            "titles": "Collagenosis according to the Charlson Comorbidity Index",
+            "datatype": "string",
+            "iknl:categorie": "Risicofactoren",
+            "iknl:collectie": "Comorbiditeit",
+            "iknl:codelijst": "Indeling naar ja en nee",
+            "iknl:codelijstType": "DWH waardelijst"
+          },
+          {
+            "name": "cci_copd",
+            "titles": "Chronic obstructive pulmonary disease according to Charlson Comorbidity Index",
+            "datatype": "string",
+            "iknl:categorie": "Risicofactoren",
+            "iknl:collectie": "Comorbiditeit",
+            "iknl:codelijst": "Indeling naar ja en nee",
+            "iknl:codelijstType": "DWH waardelijst"
+          },
+          {
+            "name": "cci_cvd",
+            "titles": "Cerebrovascular disease according to the Charlson Comorbidity Index",
+            "dc:description": "Vanaf 2019 is de registratie op de Charlson Comorbidity Index afgestemd. Van registraties uit eerdere jaren kunnen daardoor niet alle categorieën goed bepaald worden. Tot/met circa 2012: Cci_cvd bevatte geen TIA en wel significante carotis stenose (d.w.z. behandeld met carotis endarterectomie en carotis desobstructie).  Hieronder zullen patiënten onterecht niet of wel worden meegenomen bij de categorie cerebrovascular disease",
+            "datatype": "string",
+            "iknl:categorie": "Risicofactoren",
+            "iknl:collectie": "Comorbiditeit",
+            "iknl:codelijst": "Indeling naar ja en nee",
+            "iknl:codelijstType": "DWH waardelijst"
+          },
+          {
+            "name": "cci_dementia",
+            "titles": "Dementia according to the Charlson Comorbidity Index",
+            "datatype": "string",
+            "iknl:categorie": "Risicofactoren",
+            "iknl:collectie": "Comorbiditeit",
+            "iknl:codelijst": "Indeling naar ja en nee",
+            "iknl:codelijstType": "DWH waardelijst"
+          },
+          {
+            "name": "cci_dm",
+            "titles": "Diabetes Mellitus according to the Charlson Comorbidity Index",
+            "dc:description": "Vanaf 2019 is de registratie op de Charlson Comorbidity Index afgestemd. Van registraties uit eerdere jaren kunnen daardoor niet alle categorieën goed bepaald worden. Tot/met circa 2018: Diabetes alleen behandeld met dieet is tot/met 2018 wel meegenomen in de registratie",
+            "datatype": "string",
+            "iknl:categorie": "Risicofactoren",
+            "iknl:collectie": "Comorbiditeit",
+            "iknl:codelijst": "Indeling naar ja en nee",
+            "iknl:codelijstType": "DWH waardelijst"
+          },
+          {
+            "name": "cci_eod_dm",
+            "titles": "Diabetes with end organ damage according to the Charlson Comorbidity Index",
+            "datatype": "string",
+            "iknl:categorie": "Risicofactoren",
+            "iknl:collectie": "Comorbiditeit",
+            "iknl:codelijst": "Indeling naar ja en nee",
+            "iknl:codelijstType": "DWH waardelijst"
+          },
+          {
+            "name": "cci_mild_liver",
+            "titles": "Mild liver disease according to the Charlson Comorbidity Index",
+            "dc:description": "Vanaf 2019 is de registratie op de Charlson Comorbidity Index afgestemd. Van registraties uit eerdere jaren kunnen daardoor niet alle categorieën goed bepaald worden. Tot/met circa 2018: Geen onderscheid tussen mild en moderate or severe liver disease. Deze patiënten zijn allemaal meegenomen bij de variabele cci_liver1 in plaats van bij cci_liver2. Voor cci_cat maakt het niet uit, wel voor de indeling naar categorieën en cci.",
+            "datatype": "string",
+            "iknl:categorie": "Risicofactoren",
+            "iknl:collectie": "Comorbiditeit",
+            "iknl:codelijst": "Indeling naar ja en nee",
+            "iknl:codelijstType": "DWH waardelijst"
+          },
+          {
+            "name": "cci_severe_liver",
+            "titles": "Severe or moderate liver disease according to the Charlson Comorbidity Index",
+            "dc:description": "Vanaf 2019 is de registratie op de Charlson Comorbidity Index afgestemd. Van registraties uit eerdere jaren kunnen daardoor niet alle categorieën goed bepaald worden. Tot/met circa 2018: Geen onderscheid tussen mild en moderate or severe liver disease. Deze patiënten zijn allemaal meegenomen bij de variabele cci_liver1 in plaats van bij cci_liver2. Voor cci_cat maakt het niet uit, wel voor de indeling naar categoriën en cci_index.",
+            "datatype": "string",
+            "iknl:categorie": "Risicofactoren",
+            "iknl:collectie": "Comorbiditeit",
+            "iknl:codelijst": "Indeling naar ja en nee",
+            "iknl:codelijstType": "DWH waardelijst"
+          },
+          {
+            "name": "cci_malignancy",
+            "titles": "Other malignancy according to the Charlson Comorbidity Index",
+            "dc:description": "Eerdere of gelijktijdige invasieve/maligne kankers behalve basaalcel en plaveiselcelcarcinomen van de huid waarbij de initiële diagnose is gesteld tussen 5 jaar vóór tot 30 dagen ná de diagnose van deze tumor.",
+            "datatype": "string",
+            "iknl:categorie": "Risicofactoren",
+            "iknl:collectie": "Comorbiditeit",
+            "iknl:codelijst": "Indeling naar ja en nee",
+            "iknl:codelijstType": "DWH waardelijst"
+          },
+          {
+            "name": "cci_metastatic",
+            "titles": "Other metastatic solid tumor according to the Charlson Comorbidity Index",
+            "dc:description": "Eerdere of gelijktijdige gemetastaseerde kanker waarbij de diagnose is gesteld tot 30 dagen ná de diagnose van deze tumor. In de NKR zijn wij niet compleet in de registratie van metachrone metastasen. Deze worden bij veel tumorsoorten pas in recente jaren projectmatig of structureel vastgelegd, deze variabele zal dus soms onterecht op 0 kunnen staan.",
+            "datatype": "string",
+            "iknl:categorie": "Risicofactoren",
+            "iknl:collectie": "Comorbiditeit",
+            "iknl:codelijst": "Indeling naar ja en nee",
+            "iknl:codelijstType": "DWH waardelijst"
+          },
+          {
+            "name": "cci_mi",
+            "titles": "Myocardial infarct according to the Charlson Comorbidity Index",
+            "dc:description": "Vanaf 2019 is de registratie op de Charlson Comorbidity Index afgestemd. Van registraties uit eerdere jaren kunnen daardoor niet alle categorieën goed bepaald worden. Tot/met circa 2012: Cci_mi bevatte ook angina pectoris, hierdoor zullen patiënten onterecht meegenomen worden bij deze variabele.",
+            "datatype": "string",
+            "iknl:categorie": "Risicofactoren",
+            "iknl:collectie": "Comorbiditeit",
+            "iknl:codelijst": "Indeling naar ja en nee",
+            "iknl:codelijstType": "DWH waardelijst"
+          },
+          {
+            "name": "cci_plegia",
+            "titles": "Hemiplegia or paraplegia according to the Charlson Comorbidity Index",
+            "datatype": "string",
+            "iknl:categorie": "Risicofactoren",
+            "iknl:collectie": "Comorbiditeit",
+            "iknl:codelijst": "Indeling naar ja en nee",
+            "iknl:codelijstType": "DWH waardelijst"
+          },
+          {
+            "name": "cci_pvd",
+            "titles": "Peripheral vascular disease according to the Charlson Comorbidity Index",
+            "datatype": "string",
+            "iknl:categorie": "Risicofactoren",
+            "iknl:collectie": "Comorbiditeit",
+            "iknl:codelijst": "Indeling naar ja en nee",
+            "iknl:codelijstType": "DWH waardelijst"
+          },
+          {
+            "name": "cci_renal",
+            "titles": "Moderate or severe renal disease according to the Charlson Comorbidity Index",
+            "dc:description": "Vanaf 2019 is de registratie op de Charlson Comorbidity Index afgestemd. Van registraties uit eerdere jaren kunnen daardoor niet alle categorieën goed bepaald worden. Tot/met circa 2018: Cci_renal bevatte ook milde nierziekten, hierdoor zullen patiënten onterecht meegenomen worden bij de categorie moderate or severe renal disease.",
+            "datatype": "string",
+            "iknl:categorie": "Risicofactoren",
+            "iknl:collectie": "Comorbiditeit",
+            "iknl:codelijst": "Indeling naar ja en nee",
+            "iknl:codelijstType": "DWH waardelijst"
+          },
+          {
+            "name": "cci_ulcer",
+            "titles": "Ulcer disease according to the Charlson Comorbidity Index",
+            "datatype": "string",
+            "iknl:categorie": "Risicofactoren",
+            "iknl:collectie": "Comorbiditeit",
+            "iknl:codelijst": "Indeling naar ja en nee",
+            "iknl:codelijstType": "DWH waardelijst"
+          },
+          {
+            "name": "chemo_type[1-6]",
+            "titles": "Type van systemische chemotherapie[1-6]",
+            "dc:description": "Bij registraties tot 2018 is in veel gevallen enkel vastgelegd of er systemische chemotherapie werd toegediend en niet welk type dit betrof. In dit geval heeft deze variabele de waarde onbekend/NNO.",
+            "datatype": "string",
+            "iknl:categorie": "Behandelgegevens",
+            "iknl:collectie": "Long",
+            "iknl:codelijst": "Type van chemotherapie long",
+            "iknl:codelijstType": "DWH waardelijst"
+          },
+          {
+            "name": "chir",
+            "titles": "Chirurgie uitgevoerd",
+            "dc:description": "Gedefinieerd als longchirurgie met als doel om de primaire tumor te verwijderen, exclusief diagnostische procedures (zie hiervoor de variabelen m.b.t. overige chirurgie).\n\nLet op: tot en met 2015 werden er in de NKR minder details vastgelegd bij chirurgische verrichtingen, waardoor er niet altijd vastgesteld kan worden of een wigexcisie diagnostisch was of niet. In die periode kan het dus voorkomen dat een diagnostische procedure als longchirurgie wordt beschouwd.",
+            "datatype": "string",
+            "iknl:categorie": "Behandelgegevens",
+            "iknl:collectie": "Long",
+            "iknl:codelijst": "Indeling naar ja en nee",
+            "iknl:codelijstType": "DWH waardelijst"
+          },
+          {
+            "name": "chir_code[1-3]",
+            "titles": "Code van chirurgie[1-3]",
+            "dc:description": "Gedefinieerd als longchirurgie met als doel om de primaire tumor te verwijderen, exclusief diagnostische procedures (zie hiervoor de variabelen m.b.t. overige chirurgie) en aanvullende resecties.\n\nLet op: tot en met 2015 werden er in de NKR minder details vastgelegd bij chirurgische verrichtingen, waardoor er niet altijd vastgesteld kan worden of een wigexcisie diagnostisch was of niet. In die periode kan het dus voorkomen dat een diagnostische procedure als longchirurgie wordt beschouwd.",
+            "datatype": "string",
+            "iknl:categorie": "Behandelgegevens",
+            "iknl:collectie": "Long",
+            "iknl:codelijst": "gebeurtenis",
+            "iknl:codelijstType": "RANK thesaurus"
+          },
+          {
+            "name": "chir_dat[1-3]",
+            "titles": "Datum van chirurgie[1-3]",
+            "dc:description": "Leverbeperking: Data wordt voor deze variabele mogelijk niet 1:1 uitgeleverd vanwege herleidbaarheid en zal worden uitgeleverd in categorieën of intervallen.",
+            "datatype": "date",
+            "iknl:categorie": "Behandelgegevens",
+            "iknl:collectie": "Long"
+          },
+          {
+            "name": "chir_int[1-3]",
+            "titles": "Interval incidentiedatum en datum van chirurgie (dagen)[1-3]",
+            "dc:description": "Als incidentiedatum geldt de datum van de eerste histologische of cytologische bevestiging van de primaire longtumor.",
+            "datatype": "date",
+            "iknl:categorie": "Behandelgegevens",
+            "iknl:collectie": "Long"
+          },
+          {
+            "name": "chir_rad[1-3]",
+            "titles": "Radicaliteit van chirurgie[1-3]",
+            "dc:description": "Beschikbaar vanaf 2010.",
+            "datatype": "string",
+            "iknl:categorie": "Behandelgegevens",
+            "iknl:collectie": "Long",
+            "iknl:codelijst": "Radicaliteit",
+            "iknl:codelijstType": "RANK detail"
+          },
+          {
+            "name": "chir_tech[1-3]",
+            "titles": "Chirurgische techniek[1-3]",
+            "dc:description": "Beschikbaar vanaf 2010.",
+            "datatype": "string",
+            "iknl:categorie": "Behandelgegevens",
+            "iknl:collectie": "Long",
+            "iknl:codelijst": "chirurgische techniek",
+            "iknl:codelijstType": "RANK detail"
+          },
+          {
+            "name": "chir_zkh[1-3]",
+            "titles": "Ziekenhuis van chirurgie[1-3]",
+            "dc:description": "Leverbeperking: Data wordt voor deze variabele mogelijk niet 1:1 uitgeleverd vanwege herleidbaarheid en zal worden uitgeleverd in categorieën of intervallen.",
+            "datatype": "string",
+            "iknl:categorie": "Behandelgegevens",
+            "iknl:collectie": "Long",
+            "iknl:codelijst": "Instelling",
+            "iknl:codelijstType": "RANK thesaurus"
+          },
+          {
+            "name": "geen_syst_ther_reden",
+            "titles": "Reden geen systemische therapie uitgevoerd",
+            "dc:description": "Beschikbaar vanaf 2021 en alleen voor stadium IV-tumoren waarbij enkel palliatieve radiotherapie is uitgevoerd.\n\nWanneer er überhaupt geen therapie is uitgevoerd kan er gekeken worden naar de variabele geen_ther_reden.",
+            "datatype": "string",
+            "iknl:categorie": "Behandelgegevens",
+            "iknl:collectie": "Long",
+            "iknl:codelijst": "reden geen behandeling",
+            "iknl:codelijstType": "RANK detail"
+          },
+          {
+            "name": "immuno",
+            "titles": "Systemische immunotherapie naar pre- en postchirurgisch ingedeeld",
+            "dc:description": "Bij de bepaling van pre- en postchirurgische therapie wordt uitgegaan van de volgorde van de verrichtingen in de NKR. Er wordt uitgegaan van de eerste chirurgische resectie. Lokale chirurgische ingrepen (zoals poliepectomie, excisiebiopsie, TUR, fotodynamische therapie, electrocauterisatie, cryochirurgie, radiofrequente ablatie) worden niet meegenomen in de bepaling.",
+            "datatype": "string",
+            "iknl:categorie": "Behandelgegevens",
+            "iknl:collectie": "Long",
+            "iknl:codelijst": "Type therapie naar pre- en postchirurgisch ingedeeld",
+            "iknl:codelijstType": "DWH waardelijst"
+          },
+          {
+            "name": "mut_target",
+            "titles": "Systemische targeted therapie op mutaties naar pre- en postchirurgisch ingedeeld",
+            "dc:description": "Hieronder worden enkel de doelgerichte therapieën meegenomen die worden ingezet bij longkanker met specifieke mutaties, zoals bijvoorbeeld ALK, BRAF of EGFR.\n\nBij de bepaling van pre- en postchirurgische therapie wordt uitgegaan van de volgorde van de verrichtingen in de NKR. Er wordt uitgegaan van de eerste chirurgische resectie. Lokale chirurgische ingrepen (zoals poliepectomie, excisiebiopsie, TUR, fotodynamische therapie, electrocauterisatie, cryochirurgie, radiofrequente ablatie) worden niet meegenomen in de bepaling.",
+            "datatype": "string",
+            "iknl:categorie": "Behandelgegevens",
+            "iknl:collectie": "Long",
+            "iknl:codelijst": "Type therapie naar pre- en postchirurgisch ingedeeld",
+            "iknl:codelijstType": "DWH waardelijst"
+          }
+        ]
+      },
+      "iknl:note": "url verwijst momenteel naar een lege kop-rij template (geen echte patientdata); vervang zodra een echte export beschikbaar is"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/IKNL/EHDS/main/catalogues/long/long_catalogus_waardelijsten.csv",
+      "dc:title": "Long catalogus - waardelijsten (codelijsten)",
+      "dc:keyword": [
+        "codelijst",
+        "waardelijst"
+      ],
+      "tableSchema": {
+        "columns": [
+          {
+            "name": "waardelijst",
+            "titles": "Waardelijst",
+            "datatype": "string"
+          },
+          {
+            "name": "variabele",
+            "titles": "VariabeleNaam",
+            "datatype": "string"
+          },
+          {
+            "name": "waardecode",
+            "titles": "WaardeCode",
+            "datatype": "string"
+          },
+          {
+            "name": "waardeomschrijving",
+            "titles": "WaardeOmschrijving",
+            "datatype": "string"
+          }
+        ],
+        "primaryKey": [
+          "waardelijst",
+          "waardecode"
+        ]
+      }
+    }
+  ]
+}
