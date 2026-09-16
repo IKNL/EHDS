@@ -1,0 +1,990 @@
+@prefix acc: <http://publications.europa.eu/resource/authority/access-right/>.
+@prefix cat: <https://ehdsfdp.healthdataportal.eu:443/catalog/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix dcat: <http://www.w3.org/ns/dcat#>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix csvw: <http://www.w3.org/ns/csvw#>.
+@prefix technical: <http://technical.fdp/>.
+@prefix reg: <https://iknl.nl/nkr/registratie/>.
+@prefix ce: <https://iknl.nl/getmedia/TODO-media-id/>.
+@prefix vocab: <http://example.org/vocab/>.
+
+<blankNode:dataset>
+    a dcat:Dataset, dcat:Resource;
+    dct:accessRights acc:PUBLIC;
+    dct:description """Variabelen van de IKNL-gegevenscatalogus voor de collectie Long (longkanker), o.b.v. Longcatalogus_dd_2025-10-02.xlsx."""@nl;
+    dct:identifier "TODO-vervang-door-echte-document-of-media-URL"^^xsd:anyURI;
+    dct:isPartOf cat:TODO-vervang-door-echte-catalogus-uuid;
+    dct:title """Long (lung cancer)"""@nl;
+    technical:modified "2026-09-16T12:39:24.000Z"^^xsd:dateTime;
+    adms:sample <blankNode:sample-0>;
+    dcat:distribution <blankNode:distribution-0>.
+<blankNode:distribution-0>
+    a dcat:Distribution;
+    dct:isPartOf <blankNode:dataset>;
+    dct:title """Long"""@nl;
+    dcat:accessURL reg:itemsets.
+<blankNode:sample-0>
+    a dcat:Distribution;
+    dct:isPartOf <blankNode:dataset>;
+    dct:title """Variables Long (lung cancer)"""@nl;
+    dcat:downloadURL ce:TODO-vervang-door-echte-download-url.
+acc:PUBLIC a dct:RightsStatement.
+
+ce:Long_Catalogus_Variabelen_2025_IKNL
+a csvw:TableGroup; csvw:table <internalURI:LongTable1>, <internalURI:LongTable2>.
+<internalURI:LongTable1>
+    a csvw:Table;
+    dct:title """Long catalogus - variabelen"""@nl;
+    csvw:column
+        <internalURI:LongTable1Variable1>,
+        <internalURI:LongTable1Variable2>,
+        <internalURI:LongTable1Variable3>,
+        <internalURI:LongTable1Variable4>,
+        <internalURI:LongTable1Variable5>,
+        <internalURI:LongTable1Variable6>,
+        <internalURI:LongTable1Variable7>,
+        <internalURI:LongTable1Variable8>,
+        <internalURI:LongTable1Variable9>,
+        <internalURI:LongTable1Variable10>,
+        <internalURI:LongTable1Variable11>,
+        <internalURI:LongTable1Variable12>,
+        <internalURI:LongTable1Variable13>,
+        <internalURI:LongTable1Variable14>,
+        <internalURI:LongTable1Variable15>,
+        <internalURI:LongTable1Variable16>,
+        <internalURI:LongTable1Variable17>,
+        <internalURI:LongTable1Variable18>,
+        <internalURI:LongTable1Variable19>,
+        <internalURI:LongTable1Variable20>,
+        <internalURI:LongTable1Variable21>,
+        <internalURI:LongTable1Variable22>,
+        <internalURI:LongTable1Variable23>,
+        <internalURI:LongTable1Variable24>,
+        <internalURI:LongTable1Variable25>,
+        <internalURI:LongTable1Variable26>,
+        <internalURI:LongTable1Variable27>,
+        <internalURI:LongTable1Variable28>,
+        <internalURI:LongTable1Variable29>,
+        <internalURI:LongTable1Variable30>,
+        <internalURI:LongTable1Variable31>,
+        <internalURI:LongTable1Variable32>,
+        <internalURI:LongTable1Variable33>,
+        <internalURI:LongTable1Variable34>,
+        <internalURI:LongTable1Variable35>,
+        <internalURI:LongTable1Variable36>,
+        <internalURI:LongTable1Variable37>,
+        <internalURI:LongTable1Variable38>,
+        <internalURI:LongTable1Variable39>,
+        <internalURI:LongTable1Variable40>,
+        <internalURI:LongTable1Variable41>,
+        <internalURI:LongTable1Variable42>,
+        <internalURI:LongTable1Variable43>,
+        <internalURI:LongTable1Variable44>,
+        <internalURI:LongTable1Variable45>,
+        <internalURI:LongTable1Variable46>,
+        <internalURI:LongTable1Variable47>,
+        <internalURI:LongTable1Variable48>,
+        <internalURI:LongTable1Variable49>,
+        <internalURI:LongTable1Variable50>,
+        <internalURI:LongTable1Variable51>,
+        <internalURI:LongTable1Variable52>,
+        <internalURI:LongTable1Variable53>,
+        <internalURI:LongTable1Variable54>,
+        <internalURI:LongTable1Variable55>,
+        <internalURI:LongTable1Variable56>,
+        <internalURI:LongTable1Variable57>,
+        <internalURI:LongTable1Variable58>,
+        <internalURI:LongTable1Variable59>,
+        <internalURI:LongTable1Variable60>,
+        <internalURI:LongTable1Variable61>,
+        <internalURI:LongTable1Variable62>,
+        <internalURI:LongTable1Variable63>,
+        <internalURI:LongTable1Variable64>,
+        <internalURI:LongTable1Variable65>,
+        <internalURI:LongTable1Variable66>,
+        <internalURI:LongTable1Variable67>,
+        <internalURI:LongTable1Variable68>,
+        <internalURI:LongTable1Variable69>,
+        <internalURI:LongTable1Variable70>,
+        <internalURI:LongTable1Variable71>,
+        <internalURI:LongTable1Variable72>,
+        <internalURI:LongTable1Variable73>,
+        <internalURI:LongTable1Variable74>,
+        <internalURI:LongTable1Variable75>,
+        <internalURI:LongTable1Variable76>,
+        <internalURI:LongTable1Variable77>,
+        <internalURI:LongTable1Variable78>,
+        <internalURI:LongTable1Variable79>,
+        <internalURI:LongTable1Variable80>,
+        <internalURI:LongTable1Variable81>,
+        <internalURI:LongTable1Variable82>,
+        <internalURI:LongTable1Variable83>,
+        <internalURI:LongTable1Variable84>,
+        <internalURI:LongTable1Variable85>,
+        <internalURI:LongTable1Variable86>,
+        <internalURI:LongTable1Variable87>,
+        <internalURI:LongTable1Variable88>,
+        <internalURI:LongTable1Variable89>,
+        <internalURI:LongTable1Variable90>,
+        <internalURI:LongTable1Variable91>,
+        <internalURI:LongTable1Variable92>,
+        <internalURI:LongTable1Variable93>;
+    dcat:keyword """Long, kankerregistratie"""@nl.
+<internalURI:LongTable1Variable1>
+    a csvw:Column;
+    dct:description """Leverbeperking: Data wordt voor deze variabele mogelijk niet 1:1 uitgeleverd vanwege herleidbaarheid en zal worden uitgeleverd in categorieën of intervallen."""@nl;
+    csvw:datatype "date";
+    csvw:name """gebdat"""@nl;
+    csvw:titles """Geboortedatum"""@nl.
+<internalURI:LongTable1Variable2>
+    a csvw:Column;
+    csvw:datatype "string";
+    csvw:name """gesl"""@nl;
+    csvw:titles """Geslacht"""@nl.
+<internalURI:LongTable1Variable3>
+    a csvw:Column;
+    csvw:datatype "string";
+    csvw:name """iacr"""@nl;
+    csvw:titles """Telt volgens IACR regels mee in de incidentie"""@nl.
+<internalURI:LongTable1Variable4>
+    a csvw:Column;
+    dct:description """Als incidentiedatum geldt de datum van de eerste histologische of cytologische bevestiging van de tumor. De incidentiedatum kan niet na de datum van aanvang van behandeling liggen. Wanneer de behandeling start voor de histologische bevestiging, is de incidentiedatum de datum van klinische diagnose van de tumor. De incidentiedatum ligt altijd binnen een termijn van 3 maanden na het eerste klinische bezoek in verband met deze tumor. | Leverbeperking: Data wordt voor deze variabele mogelijk niet 1:1 uitgeleverd vanwege herleidbaarheid en zal worden uitgeleverd in categorieën of intervallen."""@nl;
+    csvw:datatype "date";
+    csvw:name """incdat"""@nl;
+    csvw:titles """Incidentiedatum"""@nl.
+<internalURI:LongTable1Variable5>
+    a csvw:Column;
+    dct:description """Als incidentiedatum geldt de datum van de eerste histologische of cytologische bevestiging van de tumor. De incidentiedatum kan niet na de datum van aanvang van behandeling liggen. Wanneer de behandeling start voor de histologische bevestiging, is de incidentiedatum de datum van klinische diagnose van de tumor. De incidentiedatum ligt altijd binnen een termijn van 3 maanden na het eerste klinische bezoek in verband met deze tumor."""@nl;
+    csvw:datatype "gYear";
+    csvw:name """incjr"""@nl;
+    csvw:titles """Incidentiejaar"""@nl.
+<internalURI:LongTable1Variable6>
+    a csvw:Column;
+    dct:description """Beschikbaar vanaf 2010. Sociaaleconomische status (SES) omvat iemands maatschappelijke positie. Het bepaalt voor een belangrijk deel de gezondheid en hangt onder meer samen met iemands levensverwachting in goede gezondheid. In onderzoek naar de samenhang tussen SES en gezondheid worden doorgaans de indicatoren opleiding, inkomen, beroep en/of materiële welstand gebruikt. Deze variabele berust op inkomen als proxy voor SES. 
+
+
+
+Er is gebruik gemaakt van inkomensgegevens per postcodegebied afkomstig van het CBS met 2019 als peiljaar. Deze gegevens zijn op 16-10-2023 gedownload via https://www.cbs.nl/nl-nl/dossier/nederland-regionaal/geografische-data/gegevens-per-postcode. 
+
+Inkomen is hierbij gedefinieerd als het mediaan besteedbaar huishoudinkomen na correctie voor de grootte en de samenstelling van het huishouden. Per gebied is de mediaan van het gestandaardiseerde inkomen per huishouden vergeleken met de verdeling van dit inkomen voor alle huishoudens in het land, en op basis hiervan ingedeeld in een groep; laag, onder midden, midden, boven midden, of hoog. De bijbehorende inkomensgrenzen (uitgedrukt in euro’s) zijn hier te vinden: https://www.cbs.nl/nl-nl/longread/diversen/2023/statistische-gegevens-per-vierkant-en-postcode-2022-2021-2020-2019/4-beschrijving-cijfers. Omdat het aantal huishoudens per postcodegebied vaak klein is, is er door het CBS ook gekeken naar het 99% betrouwbaarheidsinterval van het mediane inkomen. Wanneer dit interval meerdere groepen (laag, onder midden, midden, boven midden, of hoog) omvat, dan is er een nieuwe groep aangemaakt met als omschrijving het bereik ervan (bijvoorbeeld: ‘laag tot onder midden’). Doordat het betrouwbaarheidsinterval is meegenomen overlappen de categorieën elkaar gedeeltelijk. Wanneer het mediane inkomen gebaseerd is op minder dan 10 huishoudens, dan is het inkomen gecategoriseerd als ‘onclassificeerbaar’. In totaal zijn er 12 inkomenscategorieën die het CBS hanteert.
+
+
+
+Voor deze variabele is het aantal categorieën gereduceerd tot 3 categorieën, zodat het aantal categorieën behapbaar blijft en er geen sprake meer is van overlap in categorieën (en de hieraan verbonden inkomensgrenzen).
+
+
+
+Aandachtspunten: 
+
+- Inkomen is een momentopname en zegt niets over het reeds opgebouwde vermogen.
+
+- Het betreft geen individuele data maar data per postcodegebied, waarbinnen behoorlijke spreiding voor kan komen.
+
+- Vanwege de aanzienlijke leeftijdsafhankelijkheid van huishoudinkomen is het van belang om bij analyses alleen personen in dezelfde leeftijdscategorie met elkaar te vergelijken.
+
+- Het mediaan besteedbaar inkomen wordt als valide gezien voor een tijdsperiode van maximaal 10 jaar vóór en 10 jaar na het peiljaar (2019)"""@nl;
+    csvw:datatype "string";
+    csvw:name """ink_ses"""@nl;
+    csvw:titles """Mediaan inkomen in postcodegebied als proxy voor sociaaleconomische status (SES)"""@nl.
+<internalURI:LongTable1Variable7>
+    a csvw:Column;
+    dct:description """Leverbeperking: Leeftijd wordt standaard als categorische variabele geleverd (5-jaars categorieen). In overleg kan hiervan worden afgeweken."""@nl;
+    csvw:datatype "date";
+    csvw:name """leeft"""@nl;
+    csvw:titles """Leeftijd op incidentiedatum"""@nl.
+<internalURI:LongTable1Variable8>
+    a csvw:Column;
+    dct:description """Selectie van maligniteiten te specificeren in aanvraag:
+
+-Periode:  Eerdere maligniteiten en/of latere maligniteiten of op basis van een specifieke periode voorafgaand of rondom incidentiedatum.
+
+-Type: Alle type kanker in NKR, of alle maligne/invasieve (excl. bcc van de huid), of selectie op specifieke tumorsoorten.
+
+
+
+Inhoud NKR Database waarvoor volledige beschikbaarheid:
+
+Periode: Landelijk compleet vanaf 1989
+
+Exclusiecriteria:
+
+-	Patiënten woonachtig in het buitenland ten tijde van incidentie 
+
+-	Basaalcelcarcinomen van de huid en lip
+
+-	Tweede invasieve en tweede niet-invasieve plaveiselcarcinomen van de huid
+
+-	Adenocarcinoma in situ/hooggradige dysplasie van colon, rectosigmoïd en rectum
+
+-	Carcinomen in situ van de cervix
+
+-	Goedaardige/borderline tumoren, uitgezonderd:
+
+      -	Tumoren van het centrale zenuwstelsel vanaf 2001
+
+      -	Borderline tumoren van ovarium
+
+      -	AL amyloïdose vanaf 2017
+
+      -	Polymorfe PTLD"""@nl;
+    csvw:datatype "string";
+    csvw:name """mal"""@nl;
+    csvw:titles """Eerdere of latere maligniteiten"""@nl.
+<internalURI:LongTable1Variable9>
+    a csvw:Column;
+    dct:description """Leverbeperking: Data wordt voor deze variabele mogelijk niet 1:1 uitgeleverd vanwege herleidbaarheid en zal worden uitgeleverd in categorieën of intervallen."""@nl;
+    csvw:datatype "date";
+    csvw:name """mal_incdat"""@nl;
+    csvw:titles """Incidentiedatum van de eerdere of latere maligniteit"""@nl.
+<internalURI:LongTable1Variable10>
+    a csvw:Column;
+    csvw:datatype "date";
+    csvw:name """mal_int"""@nl;
+    csvw:titles """Interval incidentiedatum en datum van de eerdere of latere maligniteit"""@nl.
+<internalURI:LongTable1Variable11>
+    a csvw:Column;
+    dct:description """Betreft de NKR tumorsoortindeling op basis van lokalisatie, morfologie en gedrag. Voor meer informatie zie: https://iknl.nl/nkr/registratie/tumorindeling"""@nl;
+    csvw:datatype "string";
+    csvw:name """mal_tumsoort"""@nl;
+    csvw:titles """Tumorsoort van de eerdere of latere maligniteit"""@nl.
+<internalURI:LongTable1Variable12>
+    a csvw:Column;
+    dct:description """Leverbeperking: Data wordt voor deze variabele mogelijk niet 1:1 uitgeleverd vanwege herleidbaarheid en zal worden uitgeleverd in categorieën of intervallen."""@nl;
+    csvw:datatype "date";
+    csvw:name """ovldat"""@nl;
+    csvw:titles """Overlijdensdatum"""@nl.
+<internalURI:LongTable1Variable13>
+    a csvw:Column;
+    csvw:datatype "string";
+    csvw:name """post_cijf"""@nl;
+    csvw:titles """Het cijferdeel van de postcode van de patiënt ten tijde van incidentie"""@nl.
+<internalURI:LongTable1Variable14>
+    a csvw:Column;
+    dct:description """Eenmaal per jaar aan het einde van het eerste kwartaal wordt de NKR met de GBA (Gemeentelijke basisadministratie persoonsgegevens) gekoppeld. Het GBA is dan compleet tot februari van dat jaar. De vitale status geeft de status tot maximaal deze datum. Voor de patiënten die volgens de GBA nog in leven zijn is de datum van vitale status de datum tot wanneer de GBA compleet is. Is een patiënt volgens het GBA overleden of geëmigreerd dan is de datum van vitale status de datum van overlijden of emigratie. Met deze datum en de incidentiedatum wordt vervolgens het interval tussen incidentiedatum en datum van vitale status (dagen) berekend. | Leverbeperking: Data wordt voor deze variabele mogelijk niet 1:1 uitgeleverd vanwege herleidbaarheid en zal worden uitgeleverd in categorieën of intervallen."""@nl;
+    csvw:datatype "date";
+    csvw:name """vit_stat_dat"""@nl;
+    csvw:titles """Datum van vitale status"""@nl.
+<internalURI:LongTable1Variable15>
+    a csvw:Column;
+    dct:description """Eenmaal per jaar aan het einde van het eerste kwartaal wordt de NKR met de GBA (Gemeentelijke basisadministratie persoonsgegevens) gekoppeld. Het GBA is dan compleet tot februari van dat jaar. De vitale status geeft de status tot maximaal deze datum. Voor de patiënten die volgens de GBA nog in leven zijn is de datum van vitale status de datum tot wanneer de GBA compleet is. Is een patiënt volgens het GBA overleden of geëmigreerd dan is de datum van vitale status de datum van overlijden of emigratie. Met deze datum en de incidentiedatum wordt vervolgens het interval tussen incidentiedatum en datum van vitale status (dagen) berekend."""@nl;
+    csvw:datatype "date";
+    csvw:name """vit_stat_int"""@nl;
+    csvw:titles """Interval incidentiedatum en datum vitale status (dagen)"""@nl.
+<internalURI:LongTable1Variable16>
+    a csvw:Column;
+    dct:description """Eenmaal per jaar aan het einde van het eerste kwartaal wordt de NKR met de GBA (Gemeentelijke basisadministratie persoonsgegevens) gekoppeld. Het GBA is dan compleet tot februari van dat jaar. De vitale status geeft de status tot maximaal deze datum. Voor de patiënten die volgens de GBA nog in leven zijn is de datum van vitale status de datum tot wanneer de GBA compleet is. Is een patiënt volgens het GBA overleden of geëmigreerd dan is de datum van vitale status de datum van overlijden of emigratie. Met deze datum en de incidentiedatum wordt vervolgens het interval tussen incidentiedatum en datum van vitale status (dagen) berekend."""@nl;
+    csvw:datatype "string";
+    csvw:name """vit_stat"""@nl;
+    csvw:titles """Vitale status"""@nl.
+<internalURI:LongTable1Variable17>
+    a csvw:Column;
+    dct:description """Lokalisatie van de primaire tumor volgens ICD-O-3"""@nl;
+    csvw:datatype "string";
+    csvw:name """topo"""@nl;
+    csvw:titles """Topografie exclusief sublokalisatie"""@nl.
+<internalURI:LongTable1Variable18>
+    a csvw:Column;
+    dct:description """Lokalisatie en sublokalisatie van de primaire tumor volgens ICD-O-3"""@nl;
+    csvw:datatype "string";
+    csvw:name """topo_sublok"""@nl;
+    csvw:titles """Topografie inclusief sublokalisatie"""@nl.
+<internalURI:LongTable1Variable19>
+    a csvw:Column;
+    csvw:datatype "string";
+    csvw:name """later"""@nl;
+    csvw:titles """Lateralisatie"""@nl.
+<internalURI:LongTable1Variable20>
+    a csvw:Column;
+    dct:description """Histologisch type van de tumor (de eerste vier tekens van de ICD-O morfologiecode) volgens ICD-O-3.2"""@nl;
+    csvw:datatype "string";
+    csvw:name """morf"""@nl;
+    csvw:titles """Morfologie"""@nl.
+<internalURI:LongTable1Variable21>
+    a csvw:Column;
+    csvw:datatype "string";
+    csvw:name """morf_cat"""@nl;
+    csvw:titles """Morfologie (categorieën)"""@nl.
+<internalURI:LongTable1Variable22>
+    a csvw:Column;
+    dct:description """Gedrag van de tumor (vijfde teken van de ICD-O morfologiecode)"""@nl;
+    csvw:datatype "string";
+    csvw:name """gedrag"""@nl;
+    csvw:titles """Gedrag"""@nl.
+<internalURI:LongTable1Variable23>
+    a csvw:Column;
+    dct:description """(Differentiatie)graad van de tumor (zesde teken van de ICD-O morfologiecode)"""@nl;
+    csvw:datatype "string";
+    csvw:name """diffgrad"""@nl;
+    csvw:titles """(Differentiatie)graad"""@nl.
+<internalURI:LongTable1Variable24>
+    a csvw:Column;
+    dct:description """Voor de TNM-classificatie is gebruik gemaakt van de editie die geldt op het moment van incidentie.
+
+Van 1989 tot en met 1992 4de editie (TNM 4),
+
+van 1993 tot en met 1998 4de editie 2de revisie (TNM 4),
+
+van 1999 tot en met 2002 is dit TNM classificatie 5de editie (TNM 5), 
+
+van 2003 tot en met 2009 is dit TNM classificatie 6de editie (TNM 6),
+
+van 2010 tot en met 2016 is dit TNM classificatie 7de editie (TNM 7),
+
+en vanaf 2017 is dit TNM classificatie 8de editie (TNM 8)."""@nl;
+    csvw:datatype "string";
+    csvw:name """ct"""@nl;
+    csvw:titles """cT (TNM)"""@nl.
+<internalURI:LongTable1Variable25>
+    a csvw:Column;
+    dct:description """Voor de TNM-classificatie is gebruik gemaakt van de editie die geldt op het moment van incidentie.
+
+Van 1989 tot en met 1992 4de editie (TNM 4),
+
+van 1993 tot en met 1998 4de editie 2de revisie (TNM 4),
+
+van 1999 tot en met 2002 is dit TNM classificatie 5de editie (TNM 5), 
+
+van 2003 tot en met 2009 is dit TNM classificatie 6de editie (TNM 6),
+
+van 2010 tot en met 2016 is dit TNM classificatie 7de editie (TNM 7),
+
+en vanaf 2017 is dit TNM classificatie 8de editie (TNM 8)."""@nl;
+    csvw:datatype "string";
+    csvw:name """cn"""@nl;
+    csvw:titles """cN (TNM)"""@nl.
+<internalURI:LongTable1Variable26>
+    a csvw:Column;
+    dct:description """Voor de TNM-classificatie is gebruik gemaakt van de editie die geldt op het moment van incidentie.
+
+Van 1989 tot en met 1992 4de editie (TNM 4),
+
+van 1993 tot en met 1998 4de editie 2de revisie (TNM 4),
+
+van 1999 tot en met 2002 is dit TNM classificatie 5de editie (TNM 5), 
+
+van 2003 tot en met 2009 is dit TNM classificatie 6de editie (TNM 6),
+
+van 2010 tot en met 2016 is dit TNM classificatie 7de editie (TNM 7),
+
+en vanaf 2017 is dit TNM classificatie 8de editie (TNM 8)."""@nl;
+    csvw:datatype "string";
+    csvw:name """cm"""@nl;
+    csvw:titles """cM (TNM)"""@nl.
+<internalURI:LongTable1Variable27>
+    a csvw:Column;
+    dct:description """Voor de TNM-classificatie is gebruik gemaakt van de editie die geldt op het moment van incidentie.
+
+Van 1989 tot en met 1992 4de editie (TNM 4),
+
+van 1993 tot en met 1998 4de editie 2de revisie (TNM 4),
+
+van 1999 tot en met 2002 is dit TNM classificatie 5de editie (TNM 5), 
+
+van 2003 tot en met 2009 is dit TNM classificatie 6de editie (TNM 6),
+
+van 2010 tot en met 2016 is dit TNM classificatie 7de editie (TNM 7),
+
+en vanaf 2017 is dit TNM classificatie 8de editie (TNM 8)."""@nl;
+    csvw:datatype "string";
+    csvw:name """pt"""@nl;
+    csvw:titles """pT (TNM)"""@nl.
+<internalURI:LongTable1Variable28>
+    a csvw:Column;
+    dct:description """Voor de TNM-classificatie is gebruik gemaakt van de editie die geldt op het moment van incidentie.
+
+
+
+Betekenis laatste teken van de pN:
+
+S: Uitslag alleen gebaseerd op onderzoek van de schildwachtklier (sn)
+
+I: Geïsoleerde tumorcellen (ITC)
+
+M: Micrometastasen (mi)"""@nl;
+    csvw:datatype "string";
+    csvw:name """pn"""@nl;
+    csvw:titles """pN (TNM)"""@nl.
+<internalURI:LongTable1Variable29>
+    a csvw:Column;
+    dct:description """Voor de TNM-classificatie is gebruik gemaakt van de editie die geldt op het moment van incidentie.
+
+Van 1989 tot en met 1992 4de editie (TNM 4),
+
+van 1993 tot en met 1998 4de editie 2de revisie (TNM 4),
+
+van 1999 tot en met 2002 is dit TNM classificatie 5de editie (TNM 5), 
+
+van 2003 tot en met 2009 is dit TNM classificatie 6de editie (TNM 6),
+
+van 2010 tot en met 2016 is dit TNM classificatie 7de editie (TNM 7),
+
+en vanaf 2017 is dit TNM classificatie 8de editie (TNM 8)."""@nl;
+    csvw:datatype "string";
+    csvw:name """pm"""@nl;
+    csvw:titles """pM (TNM)"""@nl.
+<internalURI:LongTable1Variable30>
+    a csvw:Column;
+    dct:description """cstadium: Het klinisch stadium wordt gebaseerd op de cTNM. De cTNM wordt gebaseerd op informatie verkregen voor aanvang van de (neoadjuvante) behandeling, inclusief bevindingen tijdens chirurgische ingrepen (wanneer niet neoadjuvant behandeld) die van invloed zijn op het behandelplan.
+
+Betekenis “X” (onbekend): Het juiste stadium kan niet berekend worden, bijvoorbeeld bij TX/NX/M0. Betekenis “M” (missing): Een M wordt weergegeven als er geen TNM is ingevuld. Dit kan het geval zijn als de registratie nog niet volledig is afgerond, of er kan gebruik gemaakt zijn van de EoD-stadiëring in plaats van de TNM-stadiëring. Betekenis stadium “NVT” (niet van toepassing): TNM-stadium is niet van toepassing voor de betreffende tumorsoort in deze incidentieperiode."""@nl;
+    csvw:datatype "string";
+    csvw:name """cstadium"""@nl;
+    csvw:titles """Klinisch TNM-stadium"""@nl.
+<internalURI:LongTable1Variable31>
+    a csvw:Column;
+    dct:description """Voor de TNM-classificatie is gebruik gemaakt van de editie die geldt op het moment van incidentie.
+
+Van 1989 tot en met 1992 4de editie (TNM 4),
+
+van 1993 tot en met 1998 4de editie 2de revisie (TNM 4),
+
+van 1999 tot en met 2002 is dit TNM classificatie 5de editie (TNM 5), 
+
+van 2003 tot en met 2009 is dit TNM classificatie 6de editie (TNM 6),
+
+van 2010 tot en met 2016 is dit TNM classificatie 7de editie (TNM 7),
+
+en vanaf 2017 is dit TNM classificatie 8de editie (TNM 8).
+
+
+
+pstadium: Het pathologisch (post-chirurgisch) stadium wordt gebaseerd op de pT, de pN en de cM/pM. Ook in het geval van prechirurgische therapie is er gekeken naar de pT en de pN (de ypT en ypN in dat geval). Wanneer er na prechirurgische therapie geen tumor meer aantoonbaar is wordt dit weergegeven als stadiump=0.
+
+Betekenis “X” (onbekend): Het juiste stadium kan niet berekend worden, bijvoorbeeld bij TX/NX/M0. Betekenis “M” (missing): Een M wordt weergegeven als er geen TNM is ingevuld. Dit kan het geval zijn als de registratie nog niet volledig is afgerond, of er kan gebruik gemaakt zijn van de EoD-stadiëring in plaats van de TNM-stadiëring. Betekenis stadium “NVT” (niet van toepassing): TNM-stadium is niet van toepassing voor de betreffende tumorsoort in deze incidentieperiode."""@nl;
+    csvw:datatype "string";
+    csvw:name """pstadium"""@nl;
+    csvw:titles """Pathologisch TNM-stadium"""@nl.
+<internalURI:LongTable1Variable32>
+    a csvw:Column;
+    dct:description """Voor de TNM-classificatie is gebruik gemaakt van de editie die geldt op het moment van incidentie.
+
+Van 1989 tot en met 1992 4de editie (TNM 4),
+
+van 1993 tot en met 1998 4de editie 2de revisie (TNM 4),
+
+van 1999 tot en met 2002 is dit TNM classificatie 5de editie (TNM 5), 
+
+van 2003 tot en met 2009 is dit TNM classificatie 6de editie (TNM 6),
+
+van 2010 tot en met 2016 is dit TNM classificatie 7de editie (TNM 7),
+
+en vanaf 2017 is dit TNM classificatie 8de editie (TNM 8).
+
+
+
+Stadium: Het stadium op basis van pTNM aangevuld met cTNM dat zo goed als mogelijk het daadwerkelijke stadium van de tumor weergeeft ten tijde van diagnose. In eerste instantie wordt gekeken naar de waarden van de pTNM. Wanneer er geen chirurgie heeft plaatsgevonden, de waarde van de pTNM onbekend is, of er is sprake van prechirurgische therapie (de pTNM is dan een ypTNM) dan is er gekeken naar de waarden in de cTNM. 
+
+Betekenis “X” (onbekend): Het juiste stadium kan niet berekend worden, bijvoorbeeld bij TX/NX/M0. Betekenis “M” (missing): Een M wordt weergegeven als er geen TNM is ingevuld. Dit kan het geval zijn als de registratie nog niet volledig is afgerond, of er kan gebruik gemaakt zijn van de EoD-stadiëring in plaats van de TNM-stadiëring. Betekenis stadium “NVT” (niet van toepassing): TNM-stadium is niet van toepassing voor de betreffende tumorsoort in deze incidentieperiode."""@nl;
+    csvw:datatype "string";
+    csvw:name """stadium"""@nl;
+    csvw:titles """TNM-stadium"""@nl.
+<internalURI:LongTable1Variable33>
+    a csvw:Column;
+    dct:description """De ‘Extent of Disease’ (EoD)-stadiëring wordt gebruikt voor solide tumoren waarvoor geen gangbare andere stadiëring zoals de TNM-stadiëring bestaat  De EoD-stadiëring werd ook gebruikt bij morfologie M8000 (geen PA-bevestiging) tot incidentiedatum 01-01-2012."""@nl;
+    csvw:datatype "string";
+    csvw:name """ceod"""@nl;
+    csvw:titles """Klinische tumoruitbreiding (EoD)"""@nl.
+<internalURI:LongTable1Variable34>
+    a csvw:Column;
+    dct:description """De ‘Extent of Disease’ (EoD)-stadiëring wordt gebruikt voor solide tumoren waarvoor geen gangbare andere stadiëring zoals de TNM-stadiëring bestaat  De EoD-stadiëring werd ook gebruikt bij morfologie M8000 (geen PA-bevestiging) tot incidentiedatum 01-01-2012."""@nl;
+    csvw:datatype "string";
+    csvw:name """peod"""@nl;
+    csvw:titles """Pathologische tumoruitbreiding (EoD)"""@nl.
+<internalURI:LongTable1Variable35>
+    a csvw:Column;
+    dct:description """Alle lymfklieren die in het kader van initiële diagnostiek en behandeling zijn onderzocht bij elkaar opgeteld."""@nl;
+    csvw:datatype "integer";
+    csvw:name """ond_lymf"""@nl;
+    csvw:titles """Aantal onderzochte regionale lymfeklieren"""@nl.
+<internalURI:LongTable1Variable36>
+    a csvw:Column;
+    csvw:datatype "integer";
+    csvw:name """pos_lymf"""@nl;
+    csvw:titles """Aantal positieve regionale lymfeklieren"""@nl.
+<internalURI:LongTable1Variable37>
+    a csvw:Column;
+    dct:description """Niet microscopisch bevestigd
+
+0 = alleen overlijdensverklaring beschikbaar
+
+1 = alleen klinisch onderzoek (anamnese en lichamelijk onderzoek)
+
+2 = klinisch-diagnostische onderzoeken, exploratieve chirurgie of obductie (zonder microscopisch bevestiging)
+
+4 = specifieke biochemische en/of immunologische laboratoriumonderzoeken
+
+
+
+Microscopisch bevestigd
+
+5 = hematologische (beenmergcytologie = bijvoorbeeld beenmergpunctie, bloeduitstrijk) of cytologische bevestiging van de primaire tumor of metastasen, of microscopische bevestiging zeker, maar onduidelijk of dit cytologie of histologie betreft
+
+6 = histologische bevestiging uitsluitend van metastase(n), inclusief bij obductie
+
+7 = histologische bevestiging van de primaire tumor, of onduidelijk of histologische bevestiging de primaire tumor of een metastase betreft, obductie (met histologische bevestiging)"""@nl;
+    csvw:datatype "string";
+    csvw:name """diag_basis"""@nl;
+    csvw:titles """Basis voor diagnose"""@nl.
+<internalURI:LongTable1Variable38>
+    a csvw:Column;
+    dct:description """Beschikbaar van 2020 t/m 2022. Betreft de diffusiecapaciteit van de long voor koolmonoxide (DLCO). De gemeten diffusiecapaciteit wordt weergegeven als percentage van de berekende waarde voor een gezond persoon. De DLCO is afhankelijk van geslacht, leeftijd, lengte en hemoglobinegehalte."""@nl;
+    csvw:datatype "decimal";
+    csvw:name """dlco"""@nl;
+    csvw:titles """DLCO (%) ten opzichte van normaalwaarde"""@nl.
+<internalURI:LongTable1Variable39>
+    a csvw:Column;
+    dct:description """Beschikbaar van 2020 t/m 2022. Betreft het volume dat in de eerste seconde kan worden uitgeademd tijdens een geforceerde uitademingsmanoeuvre vanaf het niveau van de totale longcapaciteit, ten opzichte van de normaalwaarde. Deze normaalwaarde is afhankelijk van verschillende factoren, zoals geslacht, leeftijd en lengte."""@nl;
+    csvw:datatype "decimal";
+    csvw:name """fev1"""@nl;
+    csvw:titles """FEV-1 (%) ten opzichte van normaalwaarde"""@nl.
+<internalURI:LongTable1Variable40>
+    a csvw:Column;
+    dct:description """Beschikbaar vanaf 2015.
+
+Betreft de maximale klinische  afmeting van de primaire tumor zoals vastgesteld op de CT-scan, of op PET(/CT) wanneer er geen CT beschikbaar is. In het geval van een multifocale tumor is de tumorgrootte van de grootste tumor vastgelegd."""@nl;
+    csvw:datatype "decimal";
+    csvw:name """klin_tum_afm"""@nl;
+    csvw:titles """Klinische maximale afmeting van de primaire tumor (mm)"""@nl.
+<internalURI:LongTable1Variable41>
+    a csvw:Column;
+    dct:description """Indien er sprake is van meerdere primaire longtumoren in de voorgeschiedenis, wordt hier het interval beschreven vanaf de laatste, meest recent opgetreden longtumor voorafgaand aan de huidige longtumor. Hierbij worden alle eerdere longkankerdiagnosen in acht genomen, tot aan de dag vóór de huidige longtumor. De NKR is volledig vanaf 1989, dus incidenties van daarvoor kunnen mogelijk gemist worden.
+
+
+
+Als incidentiedatums gelden de datums van de eerste histologische of cytologische bevestiging van de primaire tumoren."""@nl;
+    csvw:datatype "date";
+    csvw:name """longtum_voor_int"""@nl;
+    csvw:titles """Interval incidentiedatum eerdere primaire longtumor en huidige longtumor (dagen)"""@nl.
+<internalURI:LongTable1Variable42>
+    a csvw:Column;
+    dct:description """Beschrijft of er voorafgaand aan de longtumor in kwestie al eerder een primaire longtumor is opgetreden. Hierbij worden alle eerdere longkankerdiagnosen in acht genomen, tot aan de dag vóór de huidige longtumor. De NKR is volledig vanaf 1989, dus incidenties van daarvoor kunnen mogelijk gemist worden."""@nl;
+    csvw:datatype "string";
+    csvw:name """longtum_voor"""@nl;
+    csvw:titles """Primaire longtumor in de voorgeschiedenis"""@nl.
+<internalURI:LongTable1Variable43>
+    a csvw:Column;
+    dct:description """Leverbeperking: Data wordt voor deze variabele mogelijk niet 1:1 uitgeleverd vanwege herleidbaarheid en zal worden uitgeleverd in categorieën of intervallen."""@nl;
+    csvw:datatype "date";
+    csvw:name """meta_incdat"""@nl;
+    csvw:titles """Incidentiedatum van metastase"""@nl.
+<internalURI:LongTable1Variable44>
+    a csvw:Column;
+    dct:description """Als incidentiedatum geldt de datum van de eerste histologische of cytologische bevestiging van de primaire tumor.
+
+Als datum van de metastase geldt de datum van de eerste histologische of cytologische bevestiging van de metastase. De datum van klinische diagnose wordt aangehouden indien er niet binnen 3 maanden sprake is van histologische bevestiging. De datum van metastase kan daarom maximaal 3 maanden voor de incidentiedatum van de primaire tumor liggen."""@nl;
+    csvw:datatype "date";
+    csvw:name """meta_int"""@nl;
+    csvw:titles """Interval incidentiedatum en datum van metastase (dagen)"""@nl.
+<internalURI:LongTable1Variable45>
+    a csvw:Column;
+    dct:description """Lokalisatie van de metastase volgens ICD-O-3. Lokalisaties van metastasen werden vanaf 2008 in alle regio’s geregistreerd. Bij metastasen op afstand op meer dan drie plaatsen, is t/m 2014 bij meta3 C768 gecodeerd om aan te geven dat er meer metastasen waren dan 3 lokalisaties. Bij recentere registraties is soms C768 gecodeerd om aan te geven dat er meer metastasen waren dan 4 lokalisaties.
+
+
+
+Verklaring records waar cm en pm beide niets aangeven over metastasen terwijl er wel metastaselokalisaties bij diagnose zijn geregistreerd: De cTNM wordt gebaseerd op informatie verkregen voor aanvang van de (neoadjuvante) behandeling, inclusief bevindingen tijdens chirurgische ingrepen (wanneer niet neoadjuvant behandeld) die van invloed zijn op het behandelplan. De pM geeft aan over er PA-bevestiging is van de metastase op afstand. Indien er tijdens of na afronding van de neoadjuvante behandeling metastasen worden aangetroffen dan wordt de registratie van de TNM niet meer aangepast, maar wordt wel alsnog de metastaselokalisatie geregistreerd.
+
+
+
+Indien in de dataset ook metastaselokalisaties na progressie zijn opgenomen: In de NKR worden bij progressie alleen nieuwe en/of gegroeide lokalisaties van metastase(n) vastgelegd, dus niet alle op het moment van progressie nog aanwezige metastasen worden nogmaals vastgelegd. C809 wordt gecodeerd bij klinische progressie, waarbij niet bekend is waar de progressie zit."""@nl;
+    csvw:datatype "string";
+    csvw:name """meta_topo_sublok"""@nl;
+    csvw:titles """Topografie inclusief sublokalisatie van metastase"""@nl.
+<internalURI:LongTable1Variable46>
+    a csvw:Column;
+    dct:description """Lokalisatie van de metastase volgens ICD-O-3. Lokalisaties van metastasen werden vanaf 2008 in alle regio’s geregistreerd. Bij metastasen op afstand op meer dan drie plaatsen, is t/m 2014 bij meta3 C768 gecodeerd om aan te geven dat er meer metastasen waren dan 3 lokalisaties. Bij recentere registraties is soms C768 gecodeerd om aan te geven dat er meer metastasen waren dan 4 lokalisaties.
+
+
+
+Verklaring records waar cm en pm beide niets aangeven over metastasen terwijl er wel metastaselokalisaties bij diagnose zijn geregistreerd: De cTNM wordt gebaseerd op informatie verkregen voor aanvang van de (neoadjuvante) behandeling, inclusief bevindingen tijdens chirurgische ingrepen (wanneer niet neoadjuvant behandeld) die van invloed zijn op het behandelplan. De pM geeft aan over er PA-bevestiging is van de metastase op afstand. Indien er tijdens of na afronding van de neoadjuvante behandeling metastasen worden aangetroffen dan wordt de registratie van de TNM niet meer aangepast, maar wordt wel alsnog de metastaselokalisatie geregistreerd.
+
+
+
+Indien in de dataset ook metastaselokalisaties na progressie zijn opgenomen: In de NKR worden bij progressie alleen nieuwe en/of gegroeide lokalisaties van metastase(n) vastgelegd, dus niet alle op het moment van progressie nog aanwezige metastasen worden nogmaals vastgelegd. C809 wordt gecodeerd bij klinische progressie, waarbij niet bekend is waar de progressie zit."""@nl;
+    csvw:datatype "string";
+    csvw:name """meta_topo"""@nl;
+    csvw:titles """Topografie exclusief sublokalisatie van metastase"""@nl.
+<internalURI:LongTable1Variable47>
+    a csvw:Column;
+    csvw:datatype "string";
+    csvw:name """multifoc"""@nl;
+    csvw:titles """Multifocaliteit tumor"""@nl.
+<internalURI:LongTable1Variable48>
+    a csvw:Column;
+    dct:description """Beschikbaar vanaf 2015.
+
+Betreft de pathologische afmeting van de primaire tumor, op basis van longchirurgie. Hierbij wordt alleen het invasieve gedeelte van de tumor in acht genomen.
+
+In het geval van meerdere longchirurgieën, en dus meerdere pathologieverslagen, wordt in deze variabele de maximale pathologische tumorgrootte weergegeven"""@nl;
+    csvw:datatype "decimal";
+    csvw:name """pa_tum_afm"""@nl;
+    csvw:titles """Pathologische maximale afmeting van de primaire tumor (mm)"""@nl.
+<internalURI:LongTable1Variable49>
+    a csvw:Column;
+    dct:description """Beschikbaar vanaf 2018. 
+
+Wanneer er meerdere PD-L1-testen zijn uitgevoerd is alleen de hoogste waarde vastgelegd."""@nl;
+    csvw:datatype "string";
+    csvw:name """pdl1_cat"""@nl;
+    csvw:titles """PD-L1-receptorwaarde (%) in categorieën"""@nl.
+<internalURI:LongTable1Variable50>
+    a csvw:Column;
+    dct:description """Er wordt gesproken van synchrone multipele primaire longkanker (sMPLC) wanneer er maximaal 90 dagen voor óf na de diagnose in kwestie een andere primaire incidentie van longkanker is opgetreden."""@nl;
+    csvw:datatype "string";
+    csvw:name """smplc"""@nl;
+    csvw:titles """Synchrone multiple primaire longkanker (sMPLC)"""@nl.
+<internalURI:LongTable1Variable51>
+    a csvw:Column;
+    dct:description """Beschikbaar vanaf 2015"""@nl;
+    csvw:datatype "string";
+    csvw:name """sulc_sup"""@nl;
+    csvw:titles """Sulcus superior"""@nl.
+<internalURI:LongTable1Variable52>
+    a csvw:Column;
+    dct:description """Het eerste ziekenhuis waar de patiënt is geweest in verband met klachten gerelateerd aan de maligniteit, en waar op basis van dat bezoek een (verdenking op) maligniteit wordt afgegeven. | Leverbeperking: Data wordt voor deze variabele mogelijk niet 1:1 uitgeleverd vanwege herleidbaarheid en zal worden uitgeleverd in categorieën of intervallen."""@nl;
+    csvw:datatype "string";
+    csvw:name """contact_zkh1"""@nl;
+    csvw:titles """Ziekenhuis van eerste contact i.v.m. maligniteit"""@nl.
+<internalURI:LongTable1Variable53>
+    a csvw:Column;
+    dct:description """Beschikbaar vanaf 2018"""@nl;
+    csvw:datatype "string";
+    csvw:name """diag_reden"""@nl;
+    csvw:titles """Reden voor diagnostiek"""@nl.
+<internalURI:LongTable1Variable54>
+    a csvw:Column;
+    dct:description """Beschikbaar vanaf 2023.
+
+In het geval van meerdere onderzoeken is het meest uitgebreide onderzoek vastgelegd."""@nl;
+    csvw:datatype "string";
+    csvw:name """mol_diag_type"""@nl;
+    csvw:titles """Type van moleculaire diagnostiek"""@nl.
+<internalURI:LongTable1Variable55>
+    a csvw:Column;
+    dct:description """Beschikbaar vanaf 2023. | Leverbeperking: Data wordt voor deze variabele mogelijk niet 1:1 uitgeleverd vanwege herleidbaarheid en zal worden uitgeleverd in categorieën of intervallen."""@nl;
+    csvw:datatype "date";
+    csvw:name """navbroncho_dat"""@nl;
+    csvw:titles """Datum van navigatiebronchoscopie"""@nl.
+<internalURI:LongTable1Variable56>
+    a csvw:Column;
+    dct:description """Beschikbaar vanaf 2023.
+
+Als incidentiedatum geldt de datum van de eerste histologische of cytologische bevestiging van de primaire tumor."""@nl;
+    csvw:datatype "date";
+    csvw:name """navbroncho_int"""@nl;
+    csvw:titles """Interval incidentiedatum en datum van navigatiebronchoscopie (dagen)"""@nl.
+<internalURI:LongTable1Variable57>
+    a csvw:Column;
+    dct:description """Beschikbaar vanaf 2023.
+
+De navigatie van deze bronchoscopie vindt CT-geleid plaats. In het geval van meerdere navigatiebronchoscopieën is alleen de laatste vastgelegd die is uitgevoerd tijdens het diagnostisch proces."""@nl;
+    csvw:datatype "string";
+    csvw:name """navbroncho_uitslag"""@nl;
+    csvw:titles """Uitslag van navigatiebronchoscopie"""@nl.
+<internalURI:LongTable1Variable58>
+    a csvw:Column;
+    dct:description """Beschikbaar vanaf 2023. | Leverbeperking: Data wordt voor deze variabele mogelijk niet 1:1 uitgeleverd vanwege herleidbaarheid en zal worden uitgeleverd in categorieën of intervallen."""@nl;
+    csvw:datatype "string";
+    csvw:name """navbroncho_zkh"""@nl;
+    csvw:titles """Ziekenhuis van navigatiebronchoscopie"""@nl.
+<internalURI:LongTable1Variable59>
+    a csvw:Column;
+    dct:description """Leverbeperking: Data wordt voor deze variabele mogelijk niet 1:1 uitgeleverd vanwege herleidbaarheid en zal worden uitgeleverd in categorieën of intervallen."""@nl;
+    csvw:datatype "date";
+    csvw:name """rev_dat"""@nl;
+    csvw:titles """Datum van revisie"""@nl.
+<internalURI:LongTable1Variable60>
+    a csvw:Column;
+    dct:description """Beschikbaar vanaf 2020.
+
+Betreft de basis voor diagnose, bepaald voorafgaand aan de start van de eerste behandeling of voor het besluit niet te behandelen."""@nl;
+    csvw:datatype "string";
+    csvw:name """ther_diag_basis"""@nl;
+    csvw:titles """Basis voor diagnose vóór start van therapie"""@nl.
+<internalURI:LongTable1Variable61>
+    a csvw:Column;
+    dct:description """Beschikbaar vanaf 2017."""@nl;
+    csvw:datatype "string";
+    csvw:name """tt_punctie"""@nl;
+    csvw:titles """Transthoracale punctie uitgevoerd"""@nl.
+<internalURI:LongTable1Variable62>
+    a csvw:Column;
+    dct:description """In het geval van meerdere uitgevoerde transthoracale puncties beschrijft deze variabele de meest informatieve uitslag. Beschikbaar van 2017 t/m 2022."""@nl;
+    csvw:datatype "string";
+    csvw:name """tt_punctie_uitslag"""@nl;
+    csvw:titles """Meest informatieve uitslag van transthoracale punctie"""@nl.
+<internalURI:LongTable1Variable63>
+    a csvw:Column;
+    dct:description """Leverbeperking: Deze variabele wordt in principe niet uitgeleverd vanwege herleidbaarheid."""@nl;
+    csvw:datatype "string";
+    csvw:name """zkh_patnum"""@nl;
+    csvw:titles """Patiëntnummer in zkh"""@nl.
+<internalURI:LongTable1Variable64>
+    a csvw:Column;
+    dct:description """Comorbiditeiten: 
+
+Het betreffen comorbiditeiten die aanwezig zijn bij diagnose of ontstaan na de incidentiedatum maar voor de start van behandeling en invloed hebben op het behandelplan.
+
+
+
+Hieronder vallen de variabelen beginnend met CCI, welke zijn gebaseerd op de Charlson Comorbdity Index (Charlson, 1987 - A new method of classifying prognostic comorbidity in longitudinal studies; development and validation) 
+
+ 
+
+De verschillende nee/ja variabelen van de categorieën zijn samengevat in de variabelen cci_cat (0, 1, 2 of meer) en cci (gewogen score volgens Charlson 1987), waarbij sommige categorieën maar eenmalig meetellen als ze beide voorkomen:  
+
+•	Cerebrovascular disease en Hemiplegia 
+
+•	Diabetes en Diabetes with end organ damage 
+
+•	Mild liver disease en moderate or severe liver disease 
+
+•	Any tumor en Metastatic solid tumor 
+
+Uiteraard is het ook mogelijk om andere keuzes voor samenvattende scores te maken. 
+
+
+
+Onvolledigheden in scores 
+
+Vanaf 2019 is de registratie op de Charlson Comorbidity Index afgestemd. Van registraties uit eerdere jaren kunnen daardoor niet alle categorieën goed bepaald worden. Met name in eerdere jaren zullen deze afwijkingen leiden tot enige mate van misclassificatie en staan bij de betreffende variabele beschreven.  
+
+
+
+Opmerking: Van 1995 tot 2014 zijn comorbiditeiten alleen in de zuidelijke regio van Nederland geregistreerd. Vanaf 2015 gebeurt dit soms wel landelijk, maar lang niet voor alle tumorsoorten en incidentiejaren. Wanneer de variabelen missing zijn, betekent dat dat er geen comorbiditeiten zijn vastgelegd bij deze tumor."""@nl;
+    csvw:datatype "string";
+    csvw:name """cci"""@nl;
+    csvw:titles """Charlson Comorbidity Index (weighted)"""@nl.
+<internalURI:LongTable1Variable65>
+    a csvw:Column;
+    csvw:datatype "string";
+    csvw:name """cci_aids"""@nl;
+    csvw:titles """AIDS (including HIV) according to the Charlson Comorbidity Index"""@nl.
+<internalURI:LongTable1Variable66>
+    a csvw:Column;
+    dct:description """Comorbiditeiten: 
+
+Het betreffen comorbiditeiten die aanwezig zijn bij diagnose of ontstaan na de incidentiedatum maar voor de start van behandeling en invloed hebben op het behandelplan.
+
+
+
+Hieronder vallen de variabelen beginnend met CCI, welke zijn gebaseerd op de Charlson Comorbdity Index (Charlson, 1987 - A new method of classifying prognostic comorbidity in longitudinal studies; development and validation) 
+
+ 
+
+De verschillende nee/ja variabelen van de categorieën zijn samengevat in de variabelen cci_cat (0, 1, 2 of meer) en cci (gewogen score volgens Charlson 1987), waarbij sommige categorieën maar eenmalig meetellen als ze beide voorkomen:  
+
+•	Cerebrovascular disease en Hemiplegia 
+
+•	Diabetes en Diabetes with end organ damage 
+
+•	Mild liver disease en moderate or severe liver disease 
+
+•	Any tumor en Metastatic solid tumor 
+
+Uiteraard is het ook mogelijk om andere keuzes voor samenvattende scores te maken. 
+
+
+
+Onvolledigheden in scores 
+
+Vanaf 2019 is de registratie op de Charlson Comorbidity Index afgestemd. Van registraties uit eerdere jaren kunnen daardoor niet alle categorieën goed bepaald worden. Met name in eerdere jaren zullen deze afwijkingen leiden tot enige mate van misclassificatie en staan bij de betreffende variabele beschreven.  
+
+
+
+Opmerking: Van 1995 tot 2014 zijn comorbiditeiten alleen in de zuidelijke regio van Nederland geregistreerd. Vanaf 2015 gebeurt dit soms wel landelijk, maar lang niet voor alle tumorsoorten en incidentiejaren. Wanneer de variabelen missing zijn, betekent dat dat er geen comorbiditeiten zijn vastgelegd bij deze tumor."""@nl;
+    csvw:datatype "string";
+    csvw:name """cci_cat"""@nl;
+    csvw:titles """Number of categories according to the Charlson Comorbidity Index"""@nl.
+<internalURI:LongTable1Variable67>
+    a csvw:Column;
+    csvw:datatype "string";
+    csvw:name """cci_chf"""@nl;
+    csvw:titles """Congestive heart failue according to the Charlson Comorbidity Index"""@nl.
+<internalURI:LongTable1Variable68>
+    a csvw:Column;
+    csvw:datatype "string";
+    csvw:name """cci_collagenosis"""@nl;
+    csvw:titles """Collagenosis according to the Charlson Comorbidity Index"""@nl.
+<internalURI:LongTable1Variable69>
+    a csvw:Column;
+    csvw:datatype "string";
+    csvw:name """cci_copd"""@nl;
+    csvw:titles """Chronic obstructive pulmonary disease according to Charlson Comorbidity Index"""@nl.
+<internalURI:LongTable1Variable70>
+    a csvw:Column;
+    dct:description """Vanaf 2019 is de registratie op de Charlson Comorbidity Index afgestemd. Van registraties uit eerdere jaren kunnen daardoor niet alle categorieën goed bepaald worden. Tot/met circa 2012: Cci_cvd bevatte geen TIA en wel significante carotis stenose (d.w.z. behandeld met carotis endarterectomie en carotis desobstructie).  Hieronder zullen patiënten onterecht niet of wel worden meegenomen bij de categorie cerebrovascular disease"""@nl;
+    csvw:datatype "string";
+    csvw:name """cci_cvd"""@nl;
+    csvw:titles """Cerebrovascular disease according to the Charlson Comorbidity Index"""@nl.
+<internalURI:LongTable1Variable71>
+    a csvw:Column;
+    csvw:datatype "string";
+    csvw:name """cci_dementia"""@nl;
+    csvw:titles """Dementia according to the Charlson Comorbidity Index"""@nl.
+<internalURI:LongTable1Variable72>
+    a csvw:Column;
+    dct:description """Vanaf 2019 is de registratie op de Charlson Comorbidity Index afgestemd. Van registraties uit eerdere jaren kunnen daardoor niet alle categorieën goed bepaald worden. Tot/met circa 2018: Diabetes alleen behandeld met dieet is tot/met 2018 wel meegenomen in de registratie"""@nl;
+    csvw:datatype "string";
+    csvw:name """cci_dm"""@nl;
+    csvw:titles """Diabetes Mellitus according to the Charlson Comorbidity Index"""@nl.
+<internalURI:LongTable1Variable73>
+    a csvw:Column;
+    csvw:datatype "string";
+    csvw:name """cci_eod_dm"""@nl;
+    csvw:titles """Diabetes with end organ damage according to the Charlson Comorbidity Index"""@nl.
+<internalURI:LongTable1Variable74>
+    a csvw:Column;
+    dct:description """Vanaf 2019 is de registratie op de Charlson Comorbidity Index afgestemd. Van registraties uit eerdere jaren kunnen daardoor niet alle categorieën goed bepaald worden. Tot/met circa 2018: Geen onderscheid tussen mild en moderate or severe liver disease. Deze patiënten zijn allemaal meegenomen bij de variabele cci_liver1 in plaats van bij cci_liver2. Voor cci_cat maakt het niet uit, wel voor de indeling naar categorieën en cci."""@nl;
+    csvw:datatype "string";
+    csvw:name """cci_mild_liver"""@nl;
+    csvw:titles """Mild liver disease according to the Charlson Comorbidity Index"""@nl.
+<internalURI:LongTable1Variable75>
+    a csvw:Column;
+    dct:description """Vanaf 2019 is de registratie op de Charlson Comorbidity Index afgestemd. Van registraties uit eerdere jaren kunnen daardoor niet alle categorieën goed bepaald worden. Tot/met circa 2018: Geen onderscheid tussen mild en moderate or severe liver disease. Deze patiënten zijn allemaal meegenomen bij de variabele cci_liver1 in plaats van bij cci_liver2. Voor cci_cat maakt het niet uit, wel voor de indeling naar categoriën en cci_index."""@nl;
+    csvw:datatype "string";
+    csvw:name """cci_severe_liver"""@nl;
+    csvw:titles """Severe or moderate liver disease according to the Charlson Comorbidity Index"""@nl.
+<internalURI:LongTable1Variable76>
+    a csvw:Column;
+    dct:description """Eerdere of gelijktijdige invasieve/maligne kankers behalve basaalcel en plaveiselcelcarcinomen van de huid waarbij de initiële diagnose is gesteld tussen 5 jaar vóór tot 30 dagen ná de diagnose van deze tumor."""@nl;
+    csvw:datatype "string";
+    csvw:name """cci_malignancy"""@nl;
+    csvw:titles """Other malignancy according to the Charlson Comorbidity Index"""@nl.
+<internalURI:LongTable1Variable77>
+    a csvw:Column;
+    dct:description """Eerdere of gelijktijdige gemetastaseerde kanker waarbij de diagnose is gesteld tot 30 dagen ná de diagnose van deze tumor. In de NKR zijn wij niet compleet in de registratie van metachrone metastasen. Deze worden bij veel tumorsoorten pas in recente jaren projectmatig of structureel vastgelegd, deze variabele zal dus soms onterecht op 0 kunnen staan."""@nl;
+    csvw:datatype "string";
+    csvw:name """cci_metastatic"""@nl;
+    csvw:titles """Other metastatic solid tumor according to the Charlson Comorbidity Index"""@nl.
+<internalURI:LongTable1Variable78>
+    a csvw:Column;
+    dct:description """Vanaf 2019 is de registratie op de Charlson Comorbidity Index afgestemd. Van registraties uit eerdere jaren kunnen daardoor niet alle categorieën goed bepaald worden. Tot/met circa 2012: Cci_mi bevatte ook angina pectoris, hierdoor zullen patiënten onterecht meegenomen worden bij deze variabele."""@nl;
+    csvw:datatype "string";
+    csvw:name """cci_mi"""@nl;
+    csvw:titles """Myocardial infarct according to the Charlson Comorbidity Index"""@nl.
+<internalURI:LongTable1Variable79>
+    a csvw:Column;
+    csvw:datatype "string";
+    csvw:name """cci_plegia"""@nl;
+    csvw:titles """Hemiplegia or paraplegia according to the Charlson Comorbidity Index"""@nl.
+<internalURI:LongTable1Variable80>
+    a csvw:Column;
+    csvw:datatype "string";
+    csvw:name """cci_pvd"""@nl;
+    csvw:titles """Peripheral vascular disease according to the Charlson Comorbidity Index"""@nl.
+<internalURI:LongTable1Variable81>
+    a csvw:Column;
+    dct:description """Vanaf 2019 is de registratie op de Charlson Comorbidity Index afgestemd. Van registraties uit eerdere jaren kunnen daardoor niet alle categorieën goed bepaald worden. Tot/met circa 2018: Cci_renal bevatte ook milde nierziekten, hierdoor zullen patiënten onterecht meegenomen worden bij de categorie moderate or severe renal disease."""@nl;
+    csvw:datatype "string";
+    csvw:name """cci_renal"""@nl;
+    csvw:titles """Moderate or severe renal disease according to the Charlson Comorbidity Index"""@nl.
+<internalURI:LongTable1Variable82>
+    a csvw:Column;
+    csvw:datatype "string";
+    csvw:name """cci_ulcer"""@nl;
+    csvw:titles """Ulcer disease according to the Charlson Comorbidity Index"""@nl.
+<internalURI:LongTable1Variable83>
+    a csvw:Column;
+    dct:description """Bij registraties tot 2018 is in veel gevallen enkel vastgelegd of er systemische chemotherapie werd toegediend en niet welk type dit betrof. In dit geval heeft deze variabele de waarde onbekend/NNO."""@nl;
+    csvw:datatype "string";
+    csvw:name """chemo_type[1-6]"""@nl;
+    csvw:titles """Type van systemische chemotherapie[1-6]"""@nl.
+<internalURI:LongTable1Variable84>
+    a csvw:Column;
+    dct:description """Gedefinieerd als longchirurgie met als doel om de primaire tumor te verwijderen, exclusief diagnostische procedures (zie hiervoor de variabelen m.b.t. overige chirurgie).
+
+Let op: tot en met 2015 werden er in de NKR minder details vastgelegd bij chirurgische verrichtingen, waardoor er niet altijd vastgesteld kan worden of een wigexcisie diagnostisch was of niet. In die periode kan het dus voorkomen dat een diagnostische procedure als longchirurgie wordt beschouwd."""@nl;
+    csvw:datatype "string";
+    csvw:name """chir"""@nl;
+    csvw:titles """Chirurgie uitgevoerd"""@nl.
+<internalURI:LongTable1Variable85>
+    a csvw:Column;
+    dct:description """Gedefinieerd als longchirurgie met als doel om de primaire tumor te verwijderen, exclusief diagnostische procedures (zie hiervoor de variabelen m.b.t. overige chirurgie) en aanvullende resecties.
+
+Let op: tot en met 2015 werden er in de NKR minder details vastgelegd bij chirurgische verrichtingen, waardoor er niet altijd vastgesteld kan worden of een wigexcisie diagnostisch was of niet. In die periode kan het dus voorkomen dat een diagnostische procedure als longchirurgie wordt beschouwd."""@nl;
+    csvw:datatype "string";
+    csvw:name """chir_code[1-3]"""@nl;
+    csvw:titles """Code van chirurgie[1-3]"""@nl.
+<internalURI:LongTable1Variable86>
+    a csvw:Column;
+    dct:description """Leverbeperking: Data wordt voor deze variabele mogelijk niet 1:1 uitgeleverd vanwege herleidbaarheid en zal worden uitgeleverd in categorieën of intervallen."""@nl;
+    csvw:datatype "date";
+    csvw:name """chir_dat[1-3]"""@nl;
+    csvw:titles """Datum van chirurgie[1-3]"""@nl.
+<internalURI:LongTable1Variable87>
+    a csvw:Column;
+    dct:description """Als incidentiedatum geldt de datum van de eerste histologische of cytologische bevestiging van de primaire longtumor."""@nl;
+    csvw:datatype "date";
+    csvw:name """chir_int[1-3]"""@nl;
+    csvw:titles """Interval incidentiedatum en datum van chirurgie (dagen)[1-3]"""@nl.
+<internalURI:LongTable1Variable88>
+    a csvw:Column;
+    dct:description """Beschikbaar vanaf 2010."""@nl;
+    csvw:datatype "string";
+    csvw:name """chir_rad[1-3]"""@nl;
+    csvw:titles """Radicaliteit van chirurgie[1-3]"""@nl.
+<internalURI:LongTable1Variable89>
+    a csvw:Column;
+    dct:description """Beschikbaar vanaf 2010."""@nl;
+    csvw:datatype "string";
+    csvw:name """chir_tech[1-3]"""@nl;
+    csvw:titles """Chirurgische techniek[1-3]"""@nl.
+<internalURI:LongTable1Variable90>
+    a csvw:Column;
+    dct:description """Leverbeperking: Data wordt voor deze variabele mogelijk niet 1:1 uitgeleverd vanwege herleidbaarheid en zal worden uitgeleverd in categorieën of intervallen."""@nl;
+    csvw:datatype "string";
+    csvw:name """chir_zkh[1-3]"""@nl;
+    csvw:titles """Ziekenhuis van chirurgie[1-3]"""@nl.
+<internalURI:LongTable1Variable91>
+    a csvw:Column;
+    dct:description """Beschikbaar vanaf 2021 en alleen voor stadium IV-tumoren waarbij enkel palliatieve radiotherapie is uitgevoerd.
+
+Wanneer er überhaupt geen therapie is uitgevoerd kan er gekeken worden naar de variabele geen_ther_reden."""@nl;
+    csvw:datatype "string";
+    csvw:name """geen_syst_ther_reden"""@nl;
+    csvw:titles """Reden geen systemische therapie uitgevoerd"""@nl.
+<internalURI:LongTable1Variable92>
+    a csvw:Column;
+    dct:description """Bij de bepaling van pre- en postchirurgische therapie wordt uitgegaan van de volgorde van de verrichtingen in de NKR. Er wordt uitgegaan van de eerste chirurgische resectie. Lokale chirurgische ingrepen (zoals poliepectomie, excisiebiopsie, TUR, fotodynamische therapie, electrocauterisatie, cryochirurgie, radiofrequente ablatie) worden niet meegenomen in de bepaling."""@nl;
+    csvw:datatype "string";
+    csvw:name """immuno"""@nl;
+    csvw:titles """Systemische immunotherapie naar pre- en postchirurgisch ingedeeld"""@nl.
+<internalURI:LongTable1Variable93>
+    a csvw:Column;
+    dct:description """Hieronder worden enkel de doelgerichte therapieën meegenomen die worden ingezet bij longkanker met specifieke mutaties, zoals bijvoorbeeld ALK, BRAF of EGFR.
+
+Bij de bepaling van pre- en postchirurgische therapie wordt uitgegaan van de volgorde van de verrichtingen in de NKR. Er wordt uitgegaan van de eerste chirurgische resectie. Lokale chirurgische ingrepen (zoals poliepectomie, excisiebiopsie, TUR, fotodynamische therapie, electrocauterisatie, cryochirurgie, radiofrequente ablatie) worden niet meegenomen in de bepaling."""@nl;
+    csvw:datatype "string";
+    csvw:name """mut_target"""@nl;
+    csvw:titles """Systemische targeted therapie op mutaties naar pre- en postchirurgisch ingedeeld"""@nl.
+<internalURI:LongTable2>
+    a csvw:Table;
+    dct:title """Long catalogus - waardelijsten (codelijsten)"""@nl;
+    csvw:column
+        <internalURI:LongTable2Variable1>,
+        <internalURI:LongTable2Variable2>,
+        <internalURI:LongTable2Variable3>,
+        <internalURI:LongTable2Variable4>;
+    dcat:keyword """codelijst, waardelijst"""@nl.
+<internalURI:LongTable2Variable1>
+    a csvw:Column;
+    csvw:datatype "string";
+    csvw:name """waardelijst"""@nl;
+    csvw:titles """Waardelijst"""@nl.
+<internalURI:LongTable2Variable2>
+    a csvw:Column;
+    csvw:datatype "string";
+    csvw:name """variabele"""@nl;
+    csvw:titles """VariabeleNaam"""@nl.
+<internalURI:LongTable2Variable3>
+    a csvw:Column;
+    csvw:datatype "string";
+    csvw:name """waardecode"""@nl;
+    csvw:titles """WaardeCode"""@nl.
+<internalURI:LongTable2Variable4>
+    a csvw:Column;
+    csvw:datatype "string";
+    csvw:name """waardeomschrijving"""@nl;
+    csvw:titles """WaardeOmschrijving"""@nl.
